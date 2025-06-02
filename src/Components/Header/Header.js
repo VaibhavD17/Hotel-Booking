@@ -23,7 +23,7 @@ function Header() {
                         <a className="signup-header">
                             Sign in
                         </a>
-                        <button type="button" class="btn header-book-btn ">Book Now</button>
+                        <button type="button" class="btn header-book-btn commun-button">Book Now</button>
                     </div>
                 </div>
 
