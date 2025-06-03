@@ -27,7 +27,7 @@ li {
 
 }
 
-.container-fluid {
+.container-fluid , .container{
   padding: 0;
 }
 
@@ -534,6 +534,8 @@ margin-bottom: 0;
   text-align: center;
 }
 
+
+
 /* our-rooms */
 
 
@@ -715,6 +717,7 @@ font-size: 14px;
 line-height: 100%;
 letter-spacing: 1%;
 color: rgba(3, 65, 119, 1);
+cursor: pointer;
 }
 
 .line-hr {
@@ -824,6 +827,44 @@ vertical-align: middle;
 
 }
 
+
+/* dinning */
+
+#dinning {
+  width: 100%;
+  padding: 80px 0 100px;
+
+}
+
+.dinning-data {
+  max-width: 65%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  
+}
+
+.dinning-data .about-details-summury {
+  width: 50%;
+}
+
+.dinning-data .img-fluid {
+  width: 50%;
+}
+
+#dinning .sub-title-2 {
+  line-height: 26px;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+#dinning .link-devises {
+  display: block;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
 .only-room.radio-checkd {
     border: 1px solid rgba(3, 65, 119, 1)
 }
@@ -928,3 +969,5 @@ vertical-align: middle;
     font-size: 0.9rem;
   }
 }
+
+

@@ -16,6 +16,7 @@ import { FaWifi } from "react-icons/fa";
 import { BsPeople } from "react-icons/bs";
 import { TbAirConditioningDisabled } from "react-icons/tb";
 import { BsStars } from "react-icons/bs";
+import dinningImg from '../../assets/image/dinning-group.png'
 
 
 function Home() {
@@ -336,6 +337,26 @@ function Home() {
                         </div>
                     </div>
                 </div>
+
+            </section>
+            <section id="dinning">
+                <div className='container-fuild'>
+                    <div className='d-flex dinning-data'>
+                        <div className="about-details-summury">
+                            <h6 className="sub-title-1">About us</h6>
+                            <h4 className="main-title-1">Dine. Delight. Discover.</h4>
+                            <p className="sub-title-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  ullamco.</p>
+                            <p className="sub-title-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a className="link-devises">Learn more</a>
+                        </div>
+                        <div className='img-fluid'>
+                            <img className='width600' src={dinningImg}></img>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="subscribe">
 
             </section>
         </div>
