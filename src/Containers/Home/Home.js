@@ -17,7 +17,13 @@ import { BsPeople } from "react-icons/bs";
 import { TbAirConditioningDisabled } from "react-icons/tb";
 import { BsStars } from "react-icons/bs";
 import dinningImg from '../../assets/image/dinning-group.png'
-
+import subscribeImg from '../../assets/image/subscribe.jpg'
+import { IoMdStar } from "react-icons/io";
+import coma from "../../assets/image/“.png"
+import guestImg from "../../assets/image/Mirana.png"
+import download from "../../assets/image/download.jpg"
+import playstore from "../../assets/image/Google_Play_Store_badge_EN.png"
+import Groupvisit from "../../assets/image/Group-visit.png"
 
 function Home() {
     return (
@@ -357,7 +363,184 @@ function Home() {
 
             </section>
             <section id="subscribe">
+                <div className="subscrib-data">
+                    <img src={subscribeImg} />
+                    <div className="newsletter">
+                        <div>
+                            <h3>Subscibe to Our Newsletter</h3>
+                            <p>Get weekly update about our offers on your email, no spam guaranteed we promise ✌️</p>
+                        </div>
+                        <div className="add-news">
+                            <input placeholder="Your Email" type="email" />
+                            <button className="subscribe-button">SUBSCRIBE</button>
+                        </div>
+                    </div>
 
+                </div>
+            </section>
+            <section id="guests">
+                <div className="guests-say">
+                    <div className="our-rooms-start">
+                        <h4>What Our Guests Say</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun t ut labore et dolore magna aliqua. </p>
+                    </div>
+                    <div className="clinet-details">
+                        <div className="col-xl-4 guests-data">
+                            <div className="start-box">
+                                <img src={coma} />
+                                <div>
+                                    <ul className="star-group">
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>I’ve used other kits, but this one is the best. The attention to detail and usability are truly amazing for all designers. I highly recommend it for any type of project.</p>
+                            <hr className="line-hr" />
+                            <div className="guest-info">
+                                <div className="img-box-info">
+                                    <img src={guestImg} />
+                                </div>
+                                <h4>Mirana Marci</h4>
+                            </div>
+                        </div>
+                        <div className="col-xl-4 guests-data">
+                            <div className="start-box">
+                                <img src={coma} />
+                                <div>
+                                    <ul className="star-group">
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>I’ve used other kits, but this one is the best. The attention to detail and usability are truly amazing for all designers. I highly recommend it for any type of project.</p>
+                            <hr className="line-hr" />
+                            <div className="guest-info">
+                                <div className="img-box-info">
+                                    <img src={guestImg} />
+                                </div>
+                                <h4>Mirana Marci</h4>
+                            </div>
+                        </div>
+                        <div className="col-xl-4 guests-data">
+                            <div className="start-box">
+                                <img src={coma} />
+                                <div>
+                                    <ul className="star-group">
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>I’ve used other kits, but this one is the best. The attention to detail and usability are truly amazing for all designers. I highly recommend it for any type of project.</p>
+                            <hr className="line-hr" />
+                            <div className="guest-info">
+                                <div className="img-box-info">
+                                    <img src={guestImg} />
+                                </div>
+                                <h4>Mirana Marci</h4>
+                            </div>
+                        </div>
+                        <div className="col-xl-4 guests-data">
+                            <div className="start-box">
+                                <img src={coma} />
+                                <div>
+                                    <ul className="star-group">
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>I’ve used other kits, but this one is the best. The attention to detail and usability are truly amazing for all designers. I highly recommend it for any type of project.</p>
+                            <hr className="line-hr" />
+                            <div className="guest-info">
+                                <div className="img-box-info">
+                                    <img src={guestImg} />
+                                </div>
+                                <h4>Mirana Marci</h4>
+                            </div>
+                        </div>
+                        <div className="col-xl-4 guests-data">
+                            <div className="start-box">
+                                <img src={coma} />
+                                <div>
+                                    <ul className="star-group">
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>I’ve used other kits, but this one is the best. The attention to detail and usability are truly amazing for all designers. I highly recommend it for any type of project.</p>
+                            <hr className="line-hr" />
+                            <div className="guest-info">
+                                <div className="img-box-info">
+                                    <img src={guestImg} />
+                                </div>
+                                <h4>Mirana Marci</h4>
+                            </div>
+                        </div>
+                        <div className="col-xl-4 guests-data">
+                            <div className="start-box">
+                                <img src={coma} />
+                                <div>
+                                    <ul className="star-group">
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                        <li><a><IoMdStar /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>I’ve used other kits, but this one is the best. The attention to detail and usability are truly amazing for all designers. I highly recommend it for any type of project.</p>
+                            <hr className="line-hr" />
+                            <div className="guest-info">
+                                <div className="img-box-info">
+                                    <img src={guestImg} />
+                                </div>
+                                <h4>Mirana Marci</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="download">
+                <div className="subscrib-data">
+                    <img src={download} />
+                    <div className="newsletter">
+                       
+                            <h3>Book Your Stay Anytime, Anywhere. Download Our App Now!</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <img src={playstore} />
+                        
+                    </div>
+
+                </div>
+            </section>
+            <section id="visitPage">
+                <div className="visit">
+                    <img src={Groupvisit} />
+                        <div className="insta-follow">
+                            <h2>Visit Our Instagram Dairies</h2>
+                            <p>Follow to know more</p>
+                        </div>
+                </div>
             </section>
         </div>
     )
