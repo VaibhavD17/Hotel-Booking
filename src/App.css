@@ -1100,7 +1100,7 @@ color: rgba(255, 255, 255, 1);
 
 /* @media screen and (min-width: 576px) {} */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
 
 
   .pages-detail {
@@ -1139,7 +1139,7 @@ color: rgba(255, 255, 255, 1);
   .pages-detail {
     gap: 50px;
   }
-}
+} */
 
 @media (max-width: 991.98px) {
   .mg70 {

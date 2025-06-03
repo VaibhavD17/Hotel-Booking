@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 
 function Header() {
@@ -6,15 +7,15 @@ function Header() {
         <header>
             <div className="container-fluid">
                 <div className=" header-data  d-flex " >
-                    <a className="logo-img">
+                    <NavLink to={'/'} className="logo-img">
                         <h2>Logo</h2>
-                    </a>
+                    </NavLink>
                     
                     <div className="header-pages">
                         <ul className="pages-detail">
                             <li> <a>Overview</a></li>
                             <li> <a>Rooms</a></li>
-                            <li> <a>Dinning</a></li>
+                            <li> <NavLink to={'/'}>Dinning</NavLink></li>
                             <li> <a>Gallery</a></li>
                             <li> <a>Contact us</a></li>
                         </ul>

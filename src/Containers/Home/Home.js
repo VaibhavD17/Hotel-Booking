@@ -27,7 +27,7 @@ import Groupvisit from "../../assets/image/Group-visit.png"
 
 function Home() {
     return (
-        <div className="main">
+       <>
             <section id="hero">
                 <div className="hero-data">
                     <div className="hero-welcome">
@@ -542,7 +542,7 @@ function Home() {
                         </div>
                 </div>
             </section>
-        </div>
+        </>
     )
 }
 
