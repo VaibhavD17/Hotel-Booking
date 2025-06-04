@@ -819,13 +819,13 @@ header {
   align-items: center;
 }
 
-.hero-content {
+.hero-content-div {
   text-align: center;
   z-index: 2;
   width: 550px;
 }
 
-.hero-content h2 {
+.hero-content-div h2 {
   font-family: "Yesteryear", cursive;
   font-weight: 400;
   font-size: 100px;
@@ -1141,7 +1141,6 @@ color: rgba(255, 255, 255, 1);
 margin-bottom: 10px;
 }
 
-
 .insta-follow p {
   font-family: Open Sans;
 font-weight: 400;
@@ -1153,50 +1152,6 @@ text-transform: uppercase;
 margin-bottom: 0;
 color: rgba(255, 255, 255, 1);
 }
-/* @media screen and (max-width: 576px) {} */
-
-/* @media screen and (min-width: 576px) {} */
-
-/* @media screen and (min-width: 768px) {
-
-
-  .pages-detail {
-    gap: 20px;
-  }
-
-}
-
-@media screen and (min-width: 992px) {
-
-
-  .pages-detail {
-    gap: 20px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-
-
-  .pages-detail {
-    gap: 30px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-
-
-  .pages-detail {
-    gap: 40px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-
-
-  .pages-detail {
-    gap: 50px;
-  }
-} */
 
 @media (max-width: 991.98px) {
   .mg70 {
@@ -1245,6 +1200,21 @@ color: rgba(255, 255, 255, 1);
   }
 }
 
+img {
+  object-fit: cover;
+}
+ 
+.gallery-img {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  width: 100%;
+  object-fit: cover;
+}
 
+.hero-content h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
 
+}
 

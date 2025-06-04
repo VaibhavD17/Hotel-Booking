@@ -338,7 +338,7 @@ function Home() {
             <section id="wanderlust">
                 <div className='pool-video'>
                     <div className='wanderlust-box'>
-                        <div className='hero-content'>
+                        <div className='hero-content-div'>
                             <h2 className=''>Wanderlust</h2>
                         </div>
                     </div>

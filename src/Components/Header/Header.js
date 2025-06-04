@@ -54,7 +54,7 @@ const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
                             <li><NavLink to="about">Overview</NavLink></li>
                             <li><a href="#">Rooms</a></li>
                             <li><NavLink to="dinning">Dinning</NavLink></li>
-                            <li><NavLink href="#">Gallery</NavLink></li>
+                            <li><NavLink to={'gallery'}>Gallery</NavLink></li>
                             <li><NavLink to={'contact'}>Contact us</NavLink></li>
                         </ul>
                     </div>

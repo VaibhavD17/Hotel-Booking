@@ -9,14 +9,16 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+
 }
 
 .contact-info {
-    width: 35%;
+    width: 38%;
     box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.08);
     background: rgba(255, 255, 255, 1);
     border-radius: 4px;
     padding: 40px;
+    max-width: 100%;
 }
 
 .contact-info h5 {
@@ -37,6 +39,7 @@
 .contact-info-list {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 .contact-info-icon {
@@ -76,11 +79,12 @@
 
 
 .contact-form {
-    width: 65%;
+    width: 62%;
     box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.08);
     background: rgba(255, 255, 255, 1);
     border-radius: 4px;
     padding: 40px;
+
 }
 
 .contact-form>h6 {
@@ -105,11 +109,12 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 30px;
 }
 
 .form-group {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
 .form-group-input {
@@ -151,6 +156,7 @@ textarea {
 
 
 
+
 /* map */
 
 
@@ -164,7 +170,7 @@ textarea {
     margin: 0 auto;
     display: flex;
     gap: 30px;
-    height: 500px;
+    /* height: 500px; */
 
 }
 
@@ -192,6 +198,7 @@ textarea {
     border-radius: 4px;
 }
 
+/* Base styles */
 #mange-booking {
     width: 100%;
     padding: 100px 0;
@@ -205,24 +212,25 @@ textarea {
     border-radius: 4px;
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
 }
-
-
 
 .manage-container img {
     width: 45%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-    position: relative;
     z-index: -1;
 }
 
 .mange-data {
-    position: absolute;
-    top: 80px;
-    right: 50px;
     width: 45%;
-
+    position: relative;
+    top: auto;
+    right: auto;
 }
 
 .mange-data h3 {
@@ -238,16 +246,170 @@ textarea {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0%;
     color: rgba(20, 20, 20, 0.6);
     margin-bottom: 0;
-
 }
 
 .mange-data img {
     width: 163px;
     height: 48px;
-    z-index: 1;
     margin-top: 34px;
+    z-index: 1;
+    margin-bottom: 10px;
 }
 
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+    .manage-container {
+        flex-direction: column;
+        background: none;
+    }
+
+    .manage-container img {
+        width: 100%;
+        height: auto;
+        z-index: 0;
+    }
+
+    .mange-data {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mange-data h3 {
+        font-size: 24px;
+        line-height: 1px;
+    }
+
+    .mange-data p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .mange-data img {
+        width: 140px;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+    #mange-booking {
+        padding: 60px 0;
+    }
+
+    .mange-data h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .mange-data p {
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    .mange-data img {
+        width: 120px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .form-group {
+        flex-wrap: wrap;
+    }
+
+    .form-group-input {
+        width: 100%;
+    }
+
+    .contact-info {
+        padding: 30px 10px;
+    }
+
+
+    .contact-info-data span {
+        font-size: 11px;
+    }
+
+    .contact-info-data h6 {
+        font-size: 13px;
+    }
+
+    .hero-main-title {
+        font-size: 25px;
+    }
+
+    .contact-info-icon {
+        background: rgba(3, 65, 119, 0.1);
+        padding: 7px 10px;
+        text-align: center;
+        border-radius: 4px;
+
+    }
+
+    .contact-form > h6 {
+        line-height: 30px;
+        
+    }
+    .contact-form > h4 {
+        line-height: 30px;
+
+    }
+
+    .contact-info-icon svg {
+        color: rgba(3, 65, 119, 1);
+        width: 18px;
+        height: 18px;
+    }
+
+
+    .map-container {
+        flex-wrap: wrap;
+       
+    }
+
+    
+   
+}
+
+@media screen and (max-width: 991px) {
+    .contact-container {
+        flex-wrap: wrap;
+
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+       .map-container {
+        flex-wrap: wrap;
+       }
+        .map-container .map-box{
+        width: 100%;   
+        height: 200px; 
+    }
+
+    .map-place-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .mange-data h3 {
+        line-height: 35px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .map-container {
+        height:  500px;
+    }
+}

@@ -7,6 +7,7 @@ import Dinning from './Containers/Dinning/Dinning';
 import { Route, Routes } from 'react-router-dom';
 import About from './Containers/About/About';
 import Contact from './Containers/Contact/Contact';
+import Gallery from './Containers/Gallery/Gallery';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='dinning' element={<Dinning />} />
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
+        <Route path='gallery' element={<Gallery />} />
       </Routes>
       <Footer />
     </div>

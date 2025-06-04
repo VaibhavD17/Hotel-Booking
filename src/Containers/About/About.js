@@ -15,12 +15,12 @@ import { MdOutlineLocalDining } from "react-icons/md";
 
 function About() {
     return (
-        <>
+        <div>
             <div className='hero-about'>
                 <div className='overlay'>
                     <div className='hero-content'>
-                        <h2 className='text gallary'>About</h2>
-                        <p className='bg-white-transparent p-text'>
+                        <h2 className='hero-main-title'>About</h2>
+                        <p className='hero-sub-title'>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Quibusdam maxime praesentium Why did the scarecrow win an award?
                             Because he was outstanding in his field. Lorem ipsum
@@ -32,10 +32,10 @@ function About() {
             <div className='welcome'>
                 <div className='text-dark d-flex flex-column justify-content-center align-items-center h-100 text-center'>
                     <div className='width600'>
-                        <h4 className='blue-text fs-5'>Welcome</h4>
-                        <h2 className='text fw-bold text-dark mt-3'>Stay Once, </h2>
-                        <h2 className='text fw-bold text-dark mt-3'>Carry Memories Forever</h2>
-                        <p className='lorem gray-text p-text mt-4'>
+                        <h4 className='sub-title-1'>Welcome</h4>
+                        <h2 className='main-title-1'>Stay Once, </h2>
+                        <h2 className='main-title-1'>Carry Memories Forever</h2>
+                        <p className='sub-title-2'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             laboris nisi ut aliquip ex
                         </p>
@@ -50,9 +50,9 @@ function About() {
                         <img className='width600' src={`${aboutusImage}`}></img>
                     </div>
                     <div className='ps-4 text-dark d-flex flex-column justify-content-center'>
-                        <h4 className='blue-text fs-5'>About Us</h4>
-                        <h2 className='text fw-bold text-dark mt-2'> Your trusted partner for unforgettable stays around the world </h2>
-                        <p className='gray-text mt-4 lorem'>
+                        <h4 className='sub-title-1'>About Us</h4>
+                        <h2 className='main-title-1'> Your trusted partner for unforgettable stays around the world </h2>
+                        <p className='sub-title-2'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                         </p>
                     </div>
@@ -63,9 +63,9 @@ function About() {
             <div className='container'>
                 <div className='d-flex mt-5 mb-5 p-3 pb-5 pt-5'>
                     <div className='ps-4 text-dark d-flex flex-column justify-content-center'>
-                        <h4 className='blue-text fs-5'>Our Story</h4>
-                        <h2 className='text fw-bold text-dark mt-2'> Built on passion. Perfected through service </h2>
-                        <p className='gray-text mt-4 lorem'>
+                        <h4 className='sub-title-1'>Our Story</h4>
+                        <h2 className='main-title-1'> Built on passion. Perfected through service </h2>
+                        <p className='sub-title-2'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                         </p>
                         <p className='gray-text mt-0 lorem'>
@@ -81,8 +81,8 @@ function About() {
 
             <div className='pool-video'>
                 <div className='wanderlust'>
-                    <div className='hero-content'>
-                        <h2 className='fs-1 fw-bold'>Wanderlust</h2>
+                    <div className='hero-content-div'>
+                        <h2 className=''>Wanderlust</h2>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@ function About() {
                                 <span className='main-icon'>< PiMapPinLineFill /></span>
                             </div>
                             <div className='ps-3 text-dark d-flex flex-column justify-content-center'>
-                                <h2 className='mid-text fw-bold text-dark mt-2'> Prime location near </h2>
+                                <h2 className='mid-main-title-1'> Prime location near </h2>
                                 <p className='gray-text mt-1 fs-10 '>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                                 </p>
@@ -116,7 +116,7 @@ function About() {
                                 <span className='main-icon'>  <IoBed /> </span>
                             </div>
                             <div className='ps-3 text-dark d-flex flex-column justify-content-center'>
-                                <h2 className='mid-text fw-bold text-dark mt-2'> Spacious, elegantly furnished rooms and suites </h2>
+                                <h2 className='mid-main-title-1'> Spacious, elegantly furnished rooms and suites </h2>
                                 <p className='gray-text mt-1 fs-10 '>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                                 </p>
@@ -127,7 +127,7 @@ function About() {
                                 <span className='main-icon'>  <PiHandshakeFill /> </span>
                             </div>
                             <div className='ps-3 text-dark d-flex flex-column justify-content-center'>
-                                <h2 className='mid-text fw-bold text-dark mt-2'> Family-friendly and business-ready </h2>
+                                <h2 className='mid-main-title-1'> Family-friendly and business-ready </h2>
                                 <p className='gray-text mt-1 fs-10 '>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                                 </p>
@@ -141,7 +141,7 @@ function About() {
                                     <span className='main-icon'> <GiReceiveMoney />  </span>
                                 </div>
                                 <div className='ps-3 text-dark d-flex flex-column justify-content-center'>
-                                    <h2 className='mid-text fw-bold text-dark mt-2'> Affordable & Great Value </h2>
+                                    <h2 className='mid-main-title-1'> Affordable & Great Value </h2>
                                     <p className='gray-text mt-1 fs-10 '>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                                     </p>
@@ -152,7 +152,7 @@ function About() {
                                     <span className='main-icon'>  <MdRoomService /> </span>
                                 </div>
                                 <div className='ps-3 text-dark d-flex flex-column justify-content-center'>
-                                    <h2 className='mid-text fw-bold text-dark mt-2'> 24/7 front desk and concierge services </h2>
+                                    <h2 className='mid-main-title-1'> 24/7 front desk and concierge services </h2>
                                     <p className='gray-text mt-1 fs-10 '>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                                     </p>
@@ -164,7 +164,7 @@ function About() {
                                     </span>
                                 </div>
                                 <div className='ps-3 text-dark d-flex flex-column justify-content-center'>
-                                    <h2 className='mid-text fw-bold text-dark mt-2'> On-site dining </h2>
+                                    <h2 className='mid-main-title-1'> On-site dining </h2>
                                     <p className='gray-text mt-1 fs-10 '>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                                     </p>
@@ -181,9 +181,9 @@ function About() {
                         <img className='width600' src={`${pool2}`}></img>
                     </div>
                     <div className='ps-4 text-dark d-flex flex-column justify-content-center'>
-                        <h4 className='blue-text fs-5'> Our Mission </h4>
-                        <h2 className='text fw-bold text-dark mt-2'> Arrive as guests, leave as family </h2>
-                        <p className='gray-text mt-4 lorem'>
+                        <h4 className='sub-title-1'> Our Mission </h4>
+                        <h2 className='main-title-1'> Arrive as guests, leave as family </h2>
+                        <p className='sub-title-2'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                         </p>
                         <div className='d-flex mt-3 align-items-center'>
@@ -206,7 +206,7 @@ function About() {
                 </div>
             </div>
 
-        </>
+        </div>
     );
 }
 
