@@ -112,6 +112,8 @@ header {
   background-color: rgba(3, 65, 119, 1);
   font-size: 16px;
   font-weight: 600;
+  border: none;
+  outline: none;
 
 }
 
@@ -121,10 +123,67 @@ header {
 }
 
 
+/* Mobile toggle button */
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: rgba(3, 65, 119, 1);
+}
+
+@media (max-width: 991px) {
+  .header-data {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .header-pages {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header-pages.open {
+    display: block;
+  }
+
+  .pages-detail {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .header-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .header-book-btn {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .commun-button {
+    width: 100%;
+  }
+}
+
+
 /* Hero */
 
 
-.main #hero {
+#hero {
   width: 100%;
   height: 100vh;
   background-image: url(./assets/image/heroimage.jpg);
@@ -184,9 +243,7 @@ header {
 
 
 /* home-about */
-
-
-.main #home-about {
+#home-about {
   width: 100%;
   height: 745px;
   position: relative;
@@ -385,7 +442,7 @@ header {
 
 
 
-.main #home-about {
+#home-about {
   width: 100%;
   height: 745px;
 }

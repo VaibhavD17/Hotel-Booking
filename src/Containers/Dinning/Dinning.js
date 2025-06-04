@@ -100,24 +100,24 @@ function Dinning() {
             </section>
             <section id="restaurant-gallery">
                 <div className="restaurant-gallery-data">
-                <div className="our-rooms-start">
-                    <h4>Our Restaurant Gallery</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div className="rest-gal-box">
-                    <div className="restorant-img-box col-xl-12">
-                        <img className="col-xl-4 " src={restoimg1} />
-                        <img className="col-xl-3" src={restoimg2} />
-                        <img className="col-xl-3" src={restoimg3} />
-                        <img className="col-xl-2" src={restoimg4} />
+                    <div className="our-rooms-start">
+                        <h4>Our Restaurant Gallery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div className="restorant-img-box col-xl-12">
-                        <img className="col-xl-2" src={restoimg5} />
-                        <img className="col-xl-3" src={restoimg6} />
-                        <img className="col-xl-3" src={restoimg7} />
-                        <img className="col-xl-4" src={restoimg8} />
+                    <div className="rest-gal-box">
+                        <div className="restorant-img-box col-12 col-sm-12">
+                            <img className="col-md-4 col-12 col-sm-12 " src={restoimg1} />
+                            <img className="col-md-3 col-12 col-sm-12" src={restoimg2} />
+                            <img className="col-md-3 col-12 col-sm-12" src={restoimg3} />
+                            <img className="col-md-2 col-12 col-sm-12" src={restoimg4} />
+                        </div>
+                        <div className="restorant-img-box col-12 col-sm-12">
+                            <img className="col-md-2 col-12 col-sm-12" src={restoimg5} />
+                            <img className="col-md-3 col-12 col-sm-12" src={restoimg6} />
+                            <img className="col-md-3 col-12 col-sm-12" src={restoimg7} />
+                            <img className="col-md-4 col-12 col-sm-12" src={restoimg8} />
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
             <section id="Restaurant-Menu">
@@ -140,7 +140,10 @@ function Dinning() {
                     </div>
                     <div className="menu-item-box">
                         <div className="menu-item">
-                            <img src={restoimg1} />
+                            <div className="menu-item-image">   
+                                <img src={restoimg7} />
+                            </div>
+
                             <div className="menu-item-data">
                                 <div className="menu-name">
                                     <h5>Tuscan Herb-Crusted Chicken</h5>
@@ -150,7 +153,9 @@ function Dinning() {
                             </div>
                         </div>
                         <div className="menu-item">
-                            <img src={restoimg2} />
+                            <div className="menu-item-image">
+                                <img src={restoimg2} />
+                            </div>
                             <div className="menu-item-data">
                                 <div className="menu-name">
                                     <h5>Tuscan Herb-Crusted Chicken</h5>
@@ -160,7 +165,9 @@ function Dinning() {
                             </div>
                         </div>
                         <div className="menu-item">
-                            <img src={restoimg3} />
+                            <div className="menu-item-image">
+                                <img src={restoimg3} />
+                            </div>
                             <div className="menu-item-data">
                                 <div className="menu-name">
                                     <h5>Tuscan Herb-Crusted Chicken</h5>
@@ -170,7 +177,9 @@ function Dinning() {
                             </div>
                         </div>
                         <div className="menu-item">
-                            <img src={restoimg4} />
+                            <div className="menu-item-image">
+                                <img src={restoimg4} />
+                            </div>
                             <div className="menu-item-data">
                                 <div className="menu-name">
                                     <h5>Tuscan Herb-Crusted Chicken</h5>
@@ -180,7 +189,9 @@ function Dinning() {
                             </div>
                         </div>
                         <div className="menu-item">
-                            <img src={restoimg5} />
+                            <div className="menu-item-image">
+                                <img src={restoimg5} />
+                            </div>
                             <div className="menu-item-data">
                                 <div className="menu-name">
                                     <h5>Tuscan Herb-Crusted Chicken</h5>
@@ -190,7 +201,9 @@ function Dinning() {
                             </div>
                         </div>
                         <div className="menu-item">
-                            <img src={restoimg6} />
+                            <div className="menu-item-image">
+                                <img src={restoimg6} />
+                            </div>
                             <div className="menu-item-data">
                                 <div className="menu-name">
                                     <h5>Tuscan Herb-Crusted Chicken</h5>
@@ -202,6 +215,7 @@ function Dinning() {
                     </div>
                 </div>
             </section>
+
         </div>
     );
 };

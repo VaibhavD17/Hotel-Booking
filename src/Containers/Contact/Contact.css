@@ -1,0 +1,253 @@
+#contact {
+    width: 100%;
+    padding: 100px 0 50px;
+}
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contact-info {
+    width: 35%;
+    box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.contact-info h5 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    color: rgba(20, 20, 20, 1);
+}
+
+.contact-info>p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(20, 20, 20, 0.6);
+}
+
+.contact-info-list {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-info-icon {
+    background: rgba(3, 65, 119, 0.1);
+    padding: 14px;
+    text-align: center;
+    border-radius: 4px;
+
+}
+
+.contact-info-icon svg {
+    color: rgba(3, 65, 119, 1);
+    width: 22px;
+    height: 22px;
+}
+
+.contact-info-data span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(20, 20, 20, 0.6);
+}
+
+.contact-info-data h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(20, 20, 20, 1);
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.cont-info {
+    margin-bottom: 40px;
+}
+
+
+.contact-form {
+    width: 65%;
+    box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.contact-form>h6 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: rgba(3, 65, 119, 1);
+    margin-bottom: 0;
+}
+
+.contact-form>h4 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    color: rgba(20, 20, 20, 1);
+    margin-bottom: 0;
+}
+
+.form-data-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    gap: 50px;
+}
+
+.form-group-input {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group-input label,
+.form-group-textarea label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(20, 20, 20, 1);
+}
+
+.coummun-input,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    background: rgba(20, 20, 20, 0.06);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: rgba(20, 20, 20, 0.6);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1%;
+}
+
+
+.form-group-textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* map */
+
+
+#map {
+    width: 100%;
+    padding: 100px 0 50px;
+}
+
+.map-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    height: 500px;
+
+}
+
+.map-box {
+    width: 65%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.map-place-img {
+    width: 35%;
+    height: 100%;
+}
+
+.map-place-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#mange-booking {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.manage-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    background: linear-gradient(270deg, #FFFFFF 55%, rgba(20, 20, 20, 0) 60.04%);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.manage-container img {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.mange-data {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 45%;
+
+}
+
+.mange-data h3 {
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    color: rgba(20, 20, 20, 1);
+}
+
+.mange-data p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(20, 20, 20, 0.6);
+    margin-bottom: 0;
+
+}
+
+.mange-data img {
+    width: 163px;
+    height: 48px;
+    z-index: 1;
+    margin-top: 34px;
+}
+
