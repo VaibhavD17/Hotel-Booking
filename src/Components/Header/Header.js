@@ -4,70 +4,53 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
 
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
     return (
-        // <header>
-        //     <div className="container-fluid">
-        //         <div className=" header-data  d-flex " >
-        //             <NavLink to={'/'} className="logo-img">
-        //                 <h2>Logo</h2>
-        //             </NavLink>
 
-        //             <div className="header-pages">
-        //                 <ul className="pages-detail">
-        //                     <li> <NavLink to={'about'}>Overview</NavLink></li>
-        //                     <li> <a>Rooms</a></li>
-        //                     <li> <NavLink to={'dinning'}>Dinning</NavLink></li>
-        //                     <li> <a>Gallery</a></li>
-        //                     <li> <a>Contact us</a></li>
-        //                 </ul>
-        //             </div>
-        //             <div className="header-sign">
-        //                 <a className="signup-header">
-        //                     Sign in
-        //                 </a>
-        //                 <button type="button" class="btn header-book-btn commun-button">Book Now</button>
-        //             </div>
-        //         </div>
+        <>
+            <header className="navbar navbar-expand-lg fixed-top" style={{ background: "rgba(255, 255, 255, 0.6)", boxShadow: "-4px 4px 14px rgba(0, 0, 0, 0.08)", height: "80px", zIndex: 999 }}>
+                <div className="container-fluid">
+                    <div className=" header-data  d-flex " >
+                        <div className="d-flex align-items-center justify-content-between logo-brand-nav"> 
+                            <NavLink to="/" className="navbar-brand logo-img">
+                                <h2>Logo</h2>
+                            </NavLink>
 
-        //     </div>
+                            {/* Toggler (Hamburger Icon) */}
+                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        {/* Collapsible Content */}
+                        <div className="collapse navbar-collapse" id="navbarContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0 pages-detail">
+                                <li className="nav-item">
+                                    <NavLink to="about" className="nav-link">Overview</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link">Rooms</a>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink to="dinning" className="nav-link">Dinning</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link">Gallery</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link">Contact us</a>
+                                </li>
+                            </ul>
 
-
-        // </header>
-
-
-        <header>
-            <div className="container-fluid">
-                <div className="header-data">
-                    <NavLink to="/" className="logo-img">
-                        <h2>Logo</h2>
-                    </NavLink>
-
-                    <button className="mobile-toggle" onClick={toggleMobileMenu}>
-                        ☰
-                    </button>
-
-                    <div className={`header-pages ${isMobileMenuOpen ? 'open' : ''}`}>
-                        <ul className="pages-detail">
-                            <li><NavLink to="about">Overview</NavLink></li>
-                            <li><a href="#">Rooms</a></li>
-                            <li><NavLink to="dinning">Dinning</NavLink></li>
-                            <li><NavLink to={'gallery'}>Gallery</NavLink></li>
-                            <li><NavLink to={'contact'}>Contact us</NavLink></li>
-                        </ul>
-                    </div>
-
-                    <div className="header-sign">
-                        <a className="signup-header">Sign in</a>
-                        <button className="btn header-book-btn commun-button">Book Now</button>
+                            {/* Right-aligned buttons */}
+                            <div className="d-flex align-items-center header-sign">
+                                <a className="signup-header">Sign in</a>
+                                <button type="button" className=" header-book-btn commun-button">Book Now</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
-
-
+            </header>
+        </>
 
 
     )

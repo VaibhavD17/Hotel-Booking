@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 
 }
 
@@ -54,6 +54,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .logo-img h2 {
@@ -70,11 +71,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
 
 }
 
-.header-pages .pages-detail li a {
+ .pages-detail li a {
   display: block;
   font-weight: 600;
   font-size: 16px;
@@ -85,7 +86,7 @@ header {
 
 
 
-.header-pages .pages-detail li a:hover {
+.pages-detail li a:hover {
   font-weight: 600;
   color: rgba(3, 65, 119, 1) !important;
 }
@@ -98,8 +99,14 @@ header {
   color: rgba(3, 65, 119, 1);
 }
 
+.header-sign {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .header-book-btn {
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .commun-button {
@@ -122,26 +129,29 @@ header {
   color: white;
 }
 
-
-/* Mobile toggle button */
-.mobile-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: rgba(3, 65, 119, 1);
+.navbar-brand .logo-img h2 {
+  margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
+  .pages-detail {
+    gap: 15px;
+  }
+
+  header .commun-button {
+    font-size: 13px;
+     width: auto;
+     padding: 12px 20px;
+  }
+}
+
+
+
+@media (max-width: 998px) {
   .header-data {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 20px;
-  }
-
-  .mobile-toggle {
-    display: block;
   }
 
   .header-pages {
@@ -150,10 +160,11 @@ header {
     margin-top: 10px;
   }
 
-  .header-pages.open {
-    display: block;
-  }
+   .pages-detail li a {
+    color: #999191 !important;
+   }
 
+ 
   .pages-detail {
     flex-direction: column;
     align-items: flex-start;
@@ -174,7 +185,11 @@ header {
     width: 100%;
   }
 
-  .commun-button {
+  .logo-brand-nav {
+    width: 100%;
+  }
+
+  .header-sign .commun-button{
     width: 100%;
   }
 }
@@ -988,14 +1003,16 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
-  gap: 30px;
+  /* gap: 30px; */
 }
 
 .guests-data {
   box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
-  padding: 24px;
-  flex: 1 1 calc(33.333% - 30px);
+  padding: 24px ;
+  margin: 0 ;
+  /* flex: 1 1 calc(33.333% - 30px) !important; */
+  background-color: #fff;
 }
 
 .start-box {
@@ -1058,6 +1075,7 @@ header {
   line-height: 100%;
   color: rgba(20, 20, 20, 1);
 }
+
 
 
 /* Download */
@@ -1217,4 +1235,51 @@ img {
   color: rgba(255, 255, 255, 1);
 
 }
+
+
+
+.form-group {
+    display: flex;
+    gap: 30px;
+}
+
+.form-group-input {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group-input label,
+.form-group-textarea label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(20, 20, 20, 1);
+}
+
+
+.coummun-input,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    background: rgba(20, 20, 20, 0.06);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: rgba(20, 20, 20, 0.6);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1%;
+}
+
+
+.form-group-textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
 

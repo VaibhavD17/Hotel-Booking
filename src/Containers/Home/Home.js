@@ -27,7 +27,7 @@ import Groupvisit from "../../assets/image/Group-visit.png"
 
 function Home() {
     return (
-       <>
+       <div>
             <section id="hero">
                 <div className="hero-data">
                     <div className="hero-welcome">
@@ -385,7 +385,7 @@ function Home() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun t ut labore et dolore magna aliqua. </p>
                     </div>
                     <div className="clinet-details">
-                        <div className="col-xl-4 guests-data">
+                        <div className="col-lg-4 col-md-6 col-sm-12 guests-data">
                             <div className="start-box">
                                 <img src={coma} />
                                 <div>
@@ -407,7 +407,7 @@ function Home() {
                                 <h4>Mirana Marci</h4>
                             </div>
                         </div>
-                        <div className="col-xl-4 guests-data">
+                        <div className="col-lg-4 col-md-6 col-sm-12 guests-data">
                             <div className="start-box">
                                 <img src={coma} />
                                 <div>
@@ -429,7 +429,7 @@ function Home() {
                                 <h4>Mirana Marci</h4>
                             </div>
                         </div>
-                        <div className="col-xl-4 guests-data">
+                        <div className="col-lg-4 col-md-6 col-sm-12 guests-data">
                             <div className="start-box">
                                 <img src={coma} />
                                 <div>
@@ -451,7 +451,7 @@ function Home() {
                                 <h4>Mirana Marci</h4>
                             </div>
                         </div>
-                        <div className="col-xl-4 guests-data">
+                        <div className="col-lg-4 col-md-6 col-sm-12 guests-data">
                             <div className="start-box">
                                 <img src={coma} />
                                 <div>
@@ -473,7 +473,7 @@ function Home() {
                                 <h4>Mirana Marci</h4>
                             </div>
                         </div>
-                        <div className="col-xl-4 guests-data">
+                        <div className="col-lg-4 col-md-6 col-sm-12 guests-data">
                             <div className="start-box">
                                 <img src={coma} />
                                 <div>
@@ -495,7 +495,7 @@ function Home() {
                                 <h4>Mirana Marci</h4>
                             </div>
                         </div>
-                        <div className="col-xl-4 guests-data">
+                        <div className="col-lg-4 col-md-6 col-sm-12 guests-data">
                             <div className="start-box">
                                 <img src={coma} />
                                 <div>
@@ -542,7 +542,7 @@ function Home() {
                         </div>
                 </div>
             </section>
-        </>
+        </ div>
     )
 }
 
