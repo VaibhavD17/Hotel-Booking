@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { FaHotel } from "react-icons/fa6";
@@ -24,8 +24,85 @@ import guestImg from "../../assets/image/Mirana.png"
 import download from "../../assets/image/download.jpg"
 import playstore from "../../assets/image/Google_Play_Store_badge_EN.png"
 import Groupvisit from "../../assets/image/Group-visit.png"
+import { IoIosArrowDown } from "react-icons/io";
+import { FaPlus } from "react-icons/fa6";
+import { FaMinus } from "react-icons/fa6";
+import { FaChevronUp } from "react-icons/fa";
 
 function Home() {
+      const [checkDatein, setcheckDateIn] = useState(new Date())
+        const checkInDate = new Date(checkDatein);
+        const [checkDateout, setcheckDateOut] = useState(new Date())
+        const checkOutDate = new Date(checkDateout);
+        const [placeName, setplace] = useState('Select Place');
+        const [roomcount, setRoomcount] = useState(1);
+        const [adultcount, setadultcount] = useState(1);
+        const [childcount, setchildcount] = useState(1);
+        const [menuOpen, setMenuOpen] = useState(false);
+    
+        const CheckIn = checkInDate.toLocaleDateString("en-GB", {
+            day: "2-digit",
+            month: "short",
+            year: "numeric",
+        })
+    
+    
+        const incrementRoomcount = () => {
+            if (roomcount < 3) setRoomcount(roomcount + 1);
+        };
+    
+        const decrementRoomcount = () => {
+            if (roomcount > 1) setRoomcount(roomcount - 1);
+        };
+    
+        const incrementAdultcount = () => {
+            if (adultcount < 3) setadultcount(adultcount + 1);
+        };
+    
+        const decrementAdultcount = () => {
+            if (adultcount > 1) setadultcount(adultcount - 1);
+        };
+    
+        const incrementchildcount = () => {
+            if (childcount < 3) setchildcount(childcount + 1);
+        };
+    
+        const decrementchildcount = () => {
+            if (childcount > 1) setchildcount(childcount - 1);
+        };
+    
+        const toggleMenu = () => {
+            setMenuOpen(!menuOpen);
+        };
+    
+        const CheckOut = checkOutDate.toLocaleDateString("en-GB", {
+            day: "2-digit",
+            month: "short",
+            year: "numeric",
+        })
+    
+        const placesarr = [
+            "Mumbai",
+            "Delhi",
+            "Ahmedabad",
+            "Bangalore",
+            "Hyderabad",
+            "Chennai",
+            "Kolkata",
+            "Pune",
+            "Surat",
+            "Jaipur"
+        ];
+    
+        const [anchorEl, setAnchorEl] = useState(null);
+        const open = Boolean(anchorEl);
+    
+        const handleClick = (event) => {
+            setAnchorEl(event.currentTarget);
+        };
+        const handleClose = () => {
+            setAnchorEl(null);
+        };
     return (
        <div>
             <section id="hero">
@@ -46,81 +123,140 @@ function Home() {
             <section id="home-about">
                 <div className="hotel-check">
                     <div className="hotel-check-data">
-                        <div className="drop-down-item">
-                            <div className="drop-down">
-                                <div className="d-flex drop-down-listidata">
-                                    <span className="icon-local">
-                                        <LocationOnIcon />
+                        <div className=" drop-down drop-down-listidata">
+                            <div className='drop-down-datalist'>
+                                <span className="icon-local">
+                                    <LocationOnIcon />
+                                </span>
+                                <div className="data-local">
+                                    <span>
+                                        City
                                     </span>
-                                    <div className="data-local">
-                                        <span>
-                                            City
-                                        </span>
-                                        <p>London</p>
-                                    </div>
-
-                                </div>
-                                <div>
-
+                                    <p>{placeName}</p>
                                 </div>
                             </div>
-                            <div className="drop-down">
-                                <div className="d-flex drop-down-listidata">
-                                    <span className="icon-local">
-                                        <CalendarMonthIcon />
+                            <div className='date-select-box '>
+                                {/* <input type='date' className='date-select-input' name='date' onChange={(e) => setcheckDateIn(e.target.value)} /> */}
+                                <select className='date-select-input' onChange={(e) => setplace(e.target.value)}>
+
+                                    {
+                                        placesarr.map((place, index) => (
+                                            <option value={place} >{place}</option>
+                                        ))
+                                    }
+                                </select>
+                                <button className='date-select-icon'> <IoIosArrowDown /></button>
+                            </div>
+                        </div>
+                        <div className=" drop-down drop-down-listidata">
+                            <div className='drop-down-datalist'>
+                                <span className="icon-local">
+                                    <CalendarMonthIcon />
+                                </span>
+                                <div className="data-local">
+                                    <span>
+                                        Check in
                                     </span>
-                                    <div className="data-local">
-                                        <span>
-                                            Check in
-                                        </span>
-                                        <p>06 May 25</p>
-                                    </div>
-
-                                </div>
-                                <div>
-
+                                    <p>{CheckIn}</p>
                                 </div>
                             </div>
-                            <div className="drop-down">
-                                <div className="d-flex drop-down-listidata">
-                                    <span className="icon-local">
-                                        <CalendarMonthIcon />
+                            <div className='date-select-box '>
+                                <input type='date' className='date-select-input' name='date' onChange={(e) => setcheckDateIn(e.target.value)} />
+                                <button className='date-select-icon'> <IoIosArrowDown /></button>
+                            </div>
+                        </div>
+
+                        <div className=" drop-down drop-down-listidata">
+                            <div className='drop-down-datalist'>
+                                <span className="icon-local">
+                                    <CalendarMonthIcon />
+                                </span>
+                                <div className="data-local">
+                                    <span>
+                                        Check out
                                     </span>
-                                    <div className="data-local">
-                                        <span>
-                                            Check out
-                                        </span>
-                                        <p>London</p>
-                                    </div>
-
-                                </div>
-                                <div>
-
+                                    <p>{CheckOut}</p>
                                 </div>
                             </div>
-                            <div className="drop-down">
-                                <div className=" drop-down-listidata">
+                            <div className='date-select-box '>
+                                <input type='date' className='date-select-input' name='date' onChange={(e) => setcheckDateOut(e.target.value)} />
+                                <button className='date-select-icon'> <IoIosArrowDown /></button>
+                            </div>
+                        </div>
+
+                        <div className=" drop-down drop-down-listidata" >
+                           
+                                <div className="drop-down-datalist">
                                     <span className="icon-local">
                                         <FaHotel />
                                     </span>
                                     <div className="data-local">
-                                        <span>
-                                            Rooms & Guests
-                                        </span>
-                                        <p>1 Room, 2 adults</p>
+                                        <span>Rooms & Guests</span>
+                                        <p>{roomcount} Room, {adultcount} Adults</p>
                                     </div>
-
                                 </div>
-                                <div>
 
+                                <div className="date-select-box  "  >
+                                    <button className="menutoogales" onClick={toggleMenu} >
+                                       {menuOpen ? <FaChevronUp /> : <IoIosArrowDown />} 
+                                    </button>
+
+                                    {menuOpen && (
+                                        <div className="custom-menu basic-room-count">
+                                            <div className="menuItem-Data">
+                                                <div className="room-member-data">
+                                                    <h6>Rooms</h6>
+                                                    <p>(Maximum 3 rooms)</p>
+                                                </div>
+                                                <div className="room-num-data">
+                                                    <button className="count-Btn" onClick={decrementRoomcount} disabled={roomcount === 1}>
+                                                        <FaMinus />
+                                                    </button>
+                                                    <span className="count-number">{roomcount}</span>
+                                                    <button className="count-Btn" onClick={incrementRoomcount} disabled={roomcount === 3}>
+                                                        <FaPlus />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div className="menuItem-Data">
+                                                <div className="room-member-data">
+                                                    <h6>Adults</h6>
+                                                    <p> 3 persons per Room</p>
+                                                </div>
+                                                <div className="room-num-data">
+                                                    <button className="count-Btn" onClick={decrementAdultcount} disabled={adultcount === 1}>
+                                                        <FaMinus />
+                                                    </button>
+                                                    <span className="count-number">{adultcount}</span>
+                                                    <button className="count-Btn" onClick={incrementAdultcount} disabled={adultcount === 3}>
+                                                        <FaPlus />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div className="menuItem-Data">
+                                                <div className="room-member-data">
+                                                    <h6>Child</h6>
+                                                </div>
+                                                <div className="room-num-data">
+                                                    <button className="count-Btn" onClick={decrementchildcount} disabled={childcount === 1}>
+                                                        <FaMinus />
+                                                    </button>
+                                                    <span className="count-number">{childcount}</span>
+                                                    <button className="count-Btn" onClick={incrementchildcount} disabled={childcount === 3}>
+                                                        <FaPlus />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
-                            </div>
+                            
                         </div>
-
-                        <div className="">
-                            <button className="hotel-check-btn commun-button">Check Availability</button>
+                        <div className="drop-down">
+                            <button className=" hotel-check-btn commun-button">Check Availability</button>
                         </div>
                     </div>
+                    {/* </div> */}
                 </div>
                 <div className="data-about">
                     <div className="about-img">
@@ -132,7 +268,7 @@ function Home() {
                             <h4 className="main-title-1">Your trusted partner for unforgettable stays around the world</h4>
                             <p className="sub-title-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                         </div>
-                        <button type="button" class="btn commun-button">About us</button>
+                        <button type="button" class="commun-button">About us</button>
 
                     </div>
                 </div>
@@ -226,7 +362,7 @@ function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn  commun-button">Book Now</button>
+                                    <button type="button" class="commun-button">Book Now</button>
                                 </div>
                             </div>
                         </div>
@@ -277,7 +413,7 @@ function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn  commun-button">Book Now</button>
+                                    <button type="button" class="commun-button">Book Now</button>
                                 </div>
                             </div>
                         </div>
@@ -325,7 +461,7 @@ function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn  commun-button">Book Now</button>
+                                    <button type="button" class="commun-button">Book Now</button>
                                 </div>
                             </div>
                         </div>

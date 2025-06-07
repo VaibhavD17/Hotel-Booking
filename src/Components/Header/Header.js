@@ -10,8 +10,8 @@ function Header() {
         <>
             <header className="navbar navbar-expand-lg fixed-top" style={{ background: "rgba(255, 255, 255, 0.6)", boxShadow: "-4px 4px 14px rgba(0, 0, 0, 0.08)", height: "80px", zIndex: 999 }}>
                 <div className="container-fluid">
-                    <div className=" header-data  d-flex " >
-                        <div className="d-flex align-items-center justify-content-between logo-brand-nav"> 
+                    <div className=" header-data " >
+                        <div className=" header-data-logo-toggle align-items-center justify-content-between logo-brand-nav"> 
                             <NavLink to="/" className="navbar-brand logo-img">
                                 <h2>Logo</h2>
                             </NavLink>
@@ -28,22 +28,22 @@ function Header() {
                                     <NavLink to="about" className="nav-link">Overview</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link">Rooms</a>
+                                    <NavLink to={'rooms'} className="nav-link">Rooms</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink to="dinning" className="nav-link">Dinning</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link">Gallery</a>
+                                    <NavLink to={'gallery'} className="nav-link">Gallery</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link">Contact us</a>
+                                    <NavLink to={'contact'} className="nav-link">Contact us</NavLink>
                                 </li>
                             </ul>
 
                             {/* Right-aligned buttons */}
                             <div className="d-flex align-items-center header-sign">
-                                <a className="signup-header">Sign in</a>
+                                <NavLink to={'addreview'} className="signup-header">Sign in</NavLink>
                                 <button type="button" className=" header-book-btn commun-button">Book Now</button>
                             </div>
                         </div>

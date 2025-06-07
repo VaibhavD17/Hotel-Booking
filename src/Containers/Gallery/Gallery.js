@@ -28,19 +28,17 @@ function Gallery() {
         <div id='gallery'>
  
             {/* hero */}
-            <div className='hero-about'>
-                <div className='overlay'>
-                    <div className='hero-content'>
-                        <h3 className='text fw-bold gallary'>Gallary</h3>
-                        <p className='bg-white-transparent p-text'>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Quibusdam maxime praesentium Why did the scarecrow win an award?
-                            Because he was outstanding in his field. Lorem ipsum
-                        </p>
+            <section>
+              <div id="hero-sub">
+                <div className="sub-hero-details">
+                    <div className="sub-hero-data">
+                        <h2 className="hero-main-title">Dinning</h2>
+                        <p className="hero-sub-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam maxime praesentium Why did the scarecrow win an award? Because he was outstanding in his field. Lorem ipsum</p>
                     </div>
                 </div>
             </div>
- 
+            </section>
+            
             {/*  */}
             <div className='welcome'>
                 <div className='text-dark d-flex flex-column justify-content-center align-items-center h-100 text-center'>

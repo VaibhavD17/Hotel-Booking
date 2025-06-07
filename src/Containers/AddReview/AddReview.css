@@ -1,13 +1,13 @@
 #review-box {
     width: 100%;
-    margin: 100px 0;
+    margin: 100px 10px;
     position: relative;
 }
 
 .add-review {
     width: 40%;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255,);
 
     box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.08);
 
@@ -45,6 +45,7 @@
 
 .review-box-data {
     padding: 20px;
+    width: 100%;
 }
 
 .review-name-img {
@@ -83,7 +84,6 @@
     color: rgba(20, 20, 20, 0.6);
 }
 
-.review-star-box {}
 
 .commun-p {
     font-weight: 500;
@@ -98,6 +98,10 @@
     margin-left: 20px;
     border: none;
     outline: none;
+}
+
+.review-show-img {
+    flex-wrap: wrap;
 }
 
 .reset-btn:hover {
@@ -118,13 +122,10 @@
 
 
 #review-box .review-submit-box {
-margin: 0 auto;
-    /* width: 100%; */
+text-align: center;
 }
 
-.review-box-data .review-submit-box .commun-button {
-    margin: 0 auto !important;
-}
+
 
 .review-img-added {
     width: 70px;

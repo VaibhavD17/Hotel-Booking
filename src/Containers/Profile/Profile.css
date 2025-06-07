@@ -1,0 +1,224 @@
+.profile-section {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 110px 0 100px 0;
+}
+ 
+.profile-content {
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+ 
+.my-profile {
+    height: fit-content;
+    width: 350px;
+    box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.08);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+ 
+.frist-row {
+    padding: 15px 30px;
+    gap: 25px;
+}
+ 
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #e6ecf2;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+ 
+.circle svg {
+    font-size: 30px;
+}
+ 
+.fontz {
+    font-size: 18px;
+    font-weight: 600;
+}
+ 
+.active-row {
+    background: #0341770D;
+    border-bottom: 2px solid rgb(4, 66, 120);
+}
+ 
+.text-decoration-none svg path {
+    color: black;
+}
+ 
+.circle path{
+  color: #034177;
+}
+ 
+.profile-pic {
+  height: 110px;
+  width: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+ 
+.white-circle {
+  width: 43px;
+  height: 43px;
+  background-color: #fdfdfd;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 74px;
+  bottom: -12px;
+  box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.08);
+}
+ 
+.white-circle svg path {
+  color: #727272;
+}
+ 
+.white-circle svg {
+  font-size: 24px;
+}
+ 
+ 
+ 
+.text-capital input {
+    text-transform: uppercase;
+}
+ 
+.profile-form {
+    box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.08);
+    background: #FFF;
+    border-radius: 4px;
+    padding: 40px;
+}
+ 
+/* =========================
+   Responsive Design Tweaks
+   ========================= */
+ 
+/* For tablets and smaller (max-width: 992px) */
+@media (max-width: 992px) {
+  .profile-content {
+    flex-direction: column !important;
+    align-items: stretch;
+    gap: 30px;
+  }
+ 
+  .my-profile {
+    width: 100%;
+    height: auto;
+  }
+ 
+  .frist-row {
+    padding: 12px 20px;
+    gap: 20px;
+  }
+ 
+  .profile-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+ 
+  .form-group {
+    flex-direction: column;
+    gap: 20px;
+  }
+ 
+  .form-group-input {
+    width: 100%;
+  }
+ 
+  .commun-button {
+    width: 100% !important;
+    font-size: 16px;
+    padding: 10px;
+  }
+ 
+  .profile-pic {
+    height: 90px;
+    width: 90px;
+  }
+ 
+  .white-circle {
+    width: 36px;
+    height: 36px;
+    left: 65px;
+    bottom: -10px;
+  }
+ 
+  .white-circle svg {
+    font-size: 18px;
+  }
+ 
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+ 
+  .circle svg {
+    font-size: 22px;
+  }
+ 
+  .fontz {
+    font-size: 16px;
+  }
+ 
+  .d-flex.mb-5 {
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+  .profile-form .form-data-contact {
+    gap: 20px;
+  }
+}
+ 
+/* For small phones (max-width: 576px) */
+@media (max-width: 576px) {
+  .profile-section {
+    padding: 60px 15px;
+  }
+ 
+  .profile-content {
+    padding: 0;
+  }
+ 
+  .profile-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+ 
+  .coummun-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+ 
+  .form-group-input label {
+    font-size: 13px;
+  }
+ 
+  .form-group {
+    gap: 15px;
+  }
+ 
+  .contact-form > h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+ 
+  .contact-form > h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+ 
+ 

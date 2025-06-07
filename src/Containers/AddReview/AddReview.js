@@ -17,7 +17,9 @@ function AddReview() {
     const handleReset = () => setRating(0);
 
     // File input handler
-    const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleFileChange = (event) => {
+        console.log(event);
+        
         const files = event.target.files;
         if (files) {
             const fileArray = Array.from(files);
@@ -42,6 +44,7 @@ function AddReview() {
         setSelectedFiles(prevFiles => prevFiles.filter((_, index) => index !== indexToRemove));
     };
 
+    
 
     return (
         <div id="review-box">

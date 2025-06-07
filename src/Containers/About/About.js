@@ -13,7 +13,7 @@ import { MdRoomService } from "react-icons/md";
 import { MdOutlineLocalDining } from "react-icons/md";
 
 
-function About() {
+function About() {      
     return (
         <div>
             <div className='hero-about'>
