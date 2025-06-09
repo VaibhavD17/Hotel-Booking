@@ -1,47 +1,38 @@
 import React from "react";
-import "./Dinning.css"
-import hotelexp1 from "../../assets/image/hotel-exp1.jpg"
-import hotelexp2 from "../../assets/image/hotel-exp2.jpg"
-import hotelexp3 from "../../assets/image/hotel-exp3.jpg"
-import dinningImg from '../../assets/image/dinning-group.png'
-import craftedcuisine from '../../assets/image/crafted-cuisine.jpg'
-import restoimg1 from '../../assets/image/resto-img-1.jpg'
-import restoimg2 from '../../assets/image/resto-img-2.jpg'
-import restoimg3 from '../../assets/image/resto-img-3.jpg'
-import restoimg4 from '../../assets/image/resto-img-4.jpg'
-import restoimg5 from '../../assets/image/resto-img-5.jpg'
-import restoimg6 from '../../assets/image/resto-img-6.jpg'
-import restoimg7 from '../../assets/image/resto-img-7.jpg'
-import restoimg8 from '../../assets/image/resto-img-8.jpg'
+import "./Dinning.css";
 
-
-function Dinning() {
+function Dinnings() {
     return (
         <div id="dinnings">
-            <div id="hero-sub">
-                <div className="sub-hero-details">
-                    <div className="sub-hero-data">
-                        <h2 className="hero-main-title">Dinning</h2>
-                        <p className="hero-sub-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam maxime praesentium Why did the scarecrow win an award? Because he was outstanding in his field. Lorem ipsum</p>
+            <div className='hero-about'>
+                <div className='overlay'>
+                    <div className='hero-content'>
+                        <h2 className='text fw-bold gallary'>Dinning</h2>
+                        <p className='bg-white-transparent p-text'>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Quibusdam maxime praesentium Why did the scarecrow win an award?
+                            Because he was outstanding in his field. Lorem ipsum
+                        </p>
                     </div>
                 </div>
             </div>
+
             <section id="experience">
                 <div className="hotel-experience">
                     <div className="hotel-image-box ">
-                        <div className="main-hotel-img   ">
-                            <div className="main-hotel-img-data ">
-                                <img src={hotelexp3} />
+                        <div className="main-hotel-img">
+                            <div className="main-hotel-img-data">
+                                <img src="/assets/image/hotel-exp3.jpg" />
                             </div>
-                            <div className="main-hotel-img-data ">
-                                <img src={hotelexp2} />
+                            <div className="main-hotel-img-data">
+                                <img src="/assets/image/hotel-exp2.jpg" />
                             </div>
                         </div>
-                        <div className="sub-hotel-img  ">
-                            <img src={hotelexp1} />
+                        <div className="sub-hotel-img">
+                            <img src="/assets/image/hotel-exp1.jpg" />
                         </div>
                     </div>
-                    <div className="hotel-data-box ">
+                    <div className="hotel-data-box">
                         <div className="about-details-summury">
                             <h6 className="sub-title-1">Hotel Experience</h6>
                             <h4 className="main-title-1">From Farm to Fork: Enjoy Fresh, Seasonal Dishes at Bokinn</h4>
@@ -50,43 +41,44 @@ function Dinning() {
                             <div className="opning-box">
                                 <div className="opnning-time">
                                     <h5>Reservation Phone</h5>
-                                    <a>+1 12345 67890</a>
+                                    <a className="gray-text">+1 12345 67890</a>
                                 </div>
                                 <div className="opnning-time">
-                                    <h5>Reservation Phone</h5>
-                                    <a>+1 12345 67890</a>
+                                    <h5>Opening Hours</h5>
+                                    <a className="gray-text">10am - 12pm</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
             </section>
-            <section id="dinning">
-                <div className='container-fuild'>
-                    <div className='d-flex dinning-data'>
+
+            <section id="dinning" className='container-fuild'>
+                <div className='aboutData'>
+                    <div className='about-details'>
                         <div className="about-details-summury">
                             <h6 className="sub-title-1">About us</h6>
                             <h4 className="main-title-1">Dine. Delight. Discover.</h4>
                             <p className="sub-title-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  ullamco.</p>
                             <p className="sub-title-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-                        </div>
-                        <div className='img-fluid'>
-                            <img className='width600' src={dinningImg}></img>
                         </div>
                     </div>
+                    <div className='about-img'>
+                        <img src="/assets/image/dinning-group.png" />
+                    </div>
+
                 </div>
 
+
+
             </section>
+
             <section id="crafted">
                 <div className="crafted-box">
                     <h4 className="main-title-1 text-center">Crafted Cuisine</h4>
 
                     <div className="crafted-cuisine">
-                        <img src={craftedcuisine} />
+                        <img src="/assets/image/crafted-cuisine.jpg" />
                         <div className="bestseller crafted-cuisine-data">
                             <h5>Bestseller</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -98,6 +90,7 @@ function Dinning() {
                     </div>
                 </div>
             </section>
+
             <section id="restaurant-gallery">
                 <div className="restaurant-gallery-data">
                     <div className="our-rooms-start">
@@ -105,21 +98,22 @@ function Dinning() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div className="rest-gal-box">
-                        <div className="restorant-img-box col-12 col-sm-12">
-                            <img className="col-md-4 col-12 col-sm-12 " src={restoimg1} />
-                            <img className="col-md-3 col-12 col-sm-12" src={restoimg2} />
-                            <img className="col-md-3 col-12 col-sm-12" src={restoimg3} />
-                            <img className="col-md-2 col-12 col-sm-12" src={restoimg4} />
+                        <div className="restorant-img-box col-xl-12">
+                            <img className="col-xl-4" src="/assets/image/resto-img-1.jpg" />
+                            <img className="col-xl-3" src="/assets/image/resto-img-2.jpg" />
+                            <img className="col-xl-3" src="/assets/image/resto-img-3.jpg" />
+                            <img className="col-xl-2" src="/assets/image/resto-img-4.jpg" />
                         </div>
-                        <div className="restorant-img-box col-12 col-sm-12">
-                            <img className="col-md-2 col-12 col-sm-12" src={restoimg5} />
-                            <img className="col-md-3 col-12 col-sm-12" src={restoimg6} />
-                            <img className="col-md-3 col-12 col-sm-12" src={restoimg7} />
-                            <img className="col-md-4 col-12 col-sm-12" src={restoimg8} />
+                        <div className="restorant-img-box col-xl-12">
+                            <img className="col-xl-2" src="/assets/image/resto-img-5.jpg" />
+                            <img className="col-xl-3" src="/assets/image/resto-img-6.jpg" />
+                            <img className="col-xl-3" src="/assets/image/resto-img-7.jpg" />
+                            <img className="col-xl-4" src="/assets/image/resto-img-8.jpg" />
                         </div>
                     </div>
                 </div>
             </section>
+
             <section id="Restaurant-Menu">
                 <div className="res-menu-box">
                     <div className="our-rooms-start">
@@ -139,85 +133,25 @@ function Dinning() {
                         </ul>
                     </div>
                     <div className="menu-item-box">
-                        <div className="menu-item">
-                            <div className="menu-item-image">   
-                                <img src={restoimg7} />
-                            </div>
-
-                            <div className="menu-item-data">
-                                <div className="menu-name">
-                                    <h5>Tuscan Herb-Crusted Chicken</h5>
-                                    <h4>$123</h4>
+                        {["1", "2", "3", "4", "5", "6"].map((num, index) => (
+                            <div className="menu-item" key={index}>
+                                <div className="menu-item-image">
+                                    <img src={`/assets/image/resto-img-${num}.jpg`} />
                                 </div>
-                                <p>Salted caramel, Puff pastry, salad</p>
-                            </div>
-                        </div>
-                        <div className="menu-item">
-                            <div className="menu-item-image">
-                                <img src={restoimg2} />
-                            </div>
-                            <div className="menu-item-data">
-                                <div className="menu-name">
-                                    <h5>Tuscan Herb-Crusted Chicken</h5>
-                                    <h4>$123</h4>
+                                <div className="menu-item-data">
+                                    <div className="menu-name">
+                                        <h5>Tuscan Herb-Crusted Chicken</h5>
+                                        <h4>$123</h4>
+                                    </div>
+                                    <p>Salted caramel, Puff pastry, salad</p>
                                 </div>
-                                <p>Salted caramel, Puff pastry, salad</p>
                             </div>
-                        </div>
-                        <div className="menu-item">
-                            <div className="menu-item-image">
-                                <img src={restoimg3} />
-                            </div>
-                            <div className="menu-item-data">
-                                <div className="menu-name">
-                                    <h5>Tuscan Herb-Crusted Chicken</h5>
-                                    <h4>$123</h4>
-                                </div>
-                                <p>Salted caramel, Puff pastry, salad</p>
-                            </div>
-                        </div>
-                        <div className="menu-item">
-                            <div className="menu-item-image">
-                                <img src={restoimg4} />
-                            </div>
-                            <div className="menu-item-data">
-                                <div className="menu-name">
-                                    <h5>Tuscan Herb-Crusted Chicken</h5>
-                                    <h4>$123</h4>
-                                </div>
-                                <p>Salted caramel, Puff pastry, salad</p>
-                            </div>
-                        </div>
-                        <div className="menu-item">
-                            <div className="menu-item-image">
-                                <img src={restoimg5} />
-                            </div>
-                            <div className="menu-item-data">
-                                <div className="menu-name">
-                                    <h5>Tuscan Herb-Crusted Chicken</h5>
-                                    <h4>$123</h4>
-                                </div>
-                                <p>Salted caramel, Puff pastry, salad</p>
-                            </div>
-                        </div>
-                        <div className="menu-item">
-                            <div className="menu-item-image">
-                                <img src={restoimg6} />
-                            </div>
-                            <div className="menu-item-data">
-                                <div className="menu-name">
-                                    <h5>Tuscan Herb-Crusted Chicken</h5>
-                                    <h4>$123</h4>
-                                </div>
-                                <p>Salted caramel, Puff pastry, salad</p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>
-
         </div>
     );
-};
+}
 
-export default Dinning;
+export default Dinnings;

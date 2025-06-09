@@ -1,7 +1,5 @@
-
 import "./AddReview.css"
 import { IoCloseSharp } from "react-icons/io5";
-import reviewboxImg from "../../assets/image/review-box-img.jpg"
 import { Rating } from 'react-simple-star-rating'
 import { useState } from "react";
 import { useFormik } from "formik";
@@ -56,7 +54,7 @@ function AddReview() {
                 <form onSubmit={formik.handleSubmit} className="review-box-data">
                     <div className="review-name-img">
                         <div className="review-img">
-                            <img src={reviewboxImg} />
+                            <img src={'/assets/image/review-box-img.jpg'} />
                         </div>
                         <div className="review-name">
                             <h5>Hotel Name</h5>
@@ -68,7 +66,7 @@ function AddReview() {
                         <Rating onClick={handleRating} initialValue={rating} />
                         <button className="btn btn-primary reset-btn" onClick={handleReset}>reset</button>
                     </div>
-                    <div className="write-review">
+                    <div className={`write-review ${rating > 0 ? ' ' : 'hind-data'}`}>
                         <p className="commun-p">Write a Review (Optional)</p>
                         <div className="form-group">
                             <div className="form-group-textarea ">
@@ -77,7 +75,7 @@ function AddReview() {
                             </div>
                         </div>
                     </div>
-                    <div className="review-add-img-box">
+                    <div className={`review-add-img-box ${rating > 0 ? ' ' : 'hind-data'}`} >
                         <p className="commun-p">Add a Photo or Video (Optional)</p>
                         <div className="review-show-img d-flex gap-3">
                             {selectedFiles.map((file, index) => (

@@ -1,5 +1,4 @@
 import React from "react";
-import playstore from "../../assets/image/Google_Play_Store_badge_EN.png"
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -7,7 +6,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
- 
+
 function Footer() {
   return (
     <>
@@ -18,7 +17,7 @@ function Footer() {
               <a className="d-inline-flex fs-3 align-items-center mb-3 text-white fw-bold text-decoration-none footer-logo">
                 LOGO
               </a>
- 
+
               <ul className="list-unstyled small">
                 <li className="bg-white-transparent">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -80,7 +79,7 @@ function Footer() {
               <h6 className="mb-4">Experience App On Mobile</h6>
               <ul className="list-unstyled">
                 <li className="mb-5 bg-white-transparent">
-                  <img src={`${playstore}`}></img>
+                  <img src={`${'/assets/image/playstore.png'}`}></img>
                 </li>
                 <h6 className="mb-3">Follow us for updates</h6>
                 <li className="d-flex justify-content-start gap-2 footer-socials bg-white-transparent">
@@ -88,7 +87,6 @@ function Footer() {
                   <span className=""><FaSquareXTwitter /></span>
                   <span className=""><InstagramIcon /></span>
                 </li>
- 
               </ul>
             </div>
           </div>
@@ -99,6 +97,5 @@ function Footer() {
     </>
   );
 }
- 
+
 export default Footer;
- 

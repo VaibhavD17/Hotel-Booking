@@ -43,7 +43,7 @@ function Header() {
 
                             {/* Right-aligned buttons */}
                             <div className="d-flex align-items-center header-sign">
-                                <NavLink to={'addreview'} className="signup-header">Sign in</NavLink>
+                                <NavLink to={'profile'} className="signup-header">Sign in</NavLink>
                                 <button type="button" className=" header-book-btn commun-button">Book Now</button>
                             </div>
                         </div>

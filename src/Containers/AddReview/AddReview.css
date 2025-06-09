@@ -3,7 +3,9 @@
     margin: 100px 10px;
     position: relative;
 }
-
+.hind-data {
+    opacity: 0;
+}
 .add-review {
     width: 40%;
     margin: 0 auto;

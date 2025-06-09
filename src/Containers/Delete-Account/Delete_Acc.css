@@ -1,0 +1,200 @@
+/* Base layout for profile section */
+.profile-content {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sidebar */
+.my-profile {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .my-profile {
+        width: 25%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .my-profile {
+      width: 90%;
+    }
+}
+
+/* Main form content */
+.profile-form2 {
+    padding: 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .profile-form2 {
+        padding: 0 1.5rem;
+    }
+}
+
+/* Deactivate account list */
+.deactivate-list {
+    padding-left: 1rem;
+    list-style-type: disc;
+    font-size: 14px;
+    color: #141414;
+}
+
+.deactivate-list li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.deactivate-list li::marker {
+    font-size: 11px !important;
+}
+
+/* Delete account button */
+.delete-btn {
+    padding: 12px 40px;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #034177;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+    .delete-btn {
+        width: 100%;
+        padding: 0.65rem;
+    }
+
+    .profile-form2{
+        height: fit-content;
+    }
+}
+
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 1rem;
+}
+
+/* Modal box */
+.card-modal {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .card-modal {
+        padding: 1rem;
+    }
+}
+
+/* Modal title */
+.under-line h5 {
+    font-size: 18px;
+}
+
+@media (max-width: 576px) {
+    .under-line h5 {
+        font-size: 16px;
+    }
+}
+
+/* Buttons inside modal */
+.modal-btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.dlt-btn,
+.dlt-btn2 {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid rgba(20, 20, 20, 0.06);
+}
+
+.dlt-btn {
+    background-color: white;
+    color: #333;
+}
+
+.dlt-btn2 {
+    background-color: #034177;
+    color: white;
+}
+
+.disabled-btn {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Make buttons full width and stack on mobile */
+@media (max-width: 767.98px) {
+    .modal-btn-group {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .dlt-btn,
+    .dlt-btn2 {
+        width: 100%;
+    }
+
+}
+
+/* Typography */
+.gray {
+    color: #666;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+@media (max-width: 576px) {
+    .fs-14,
+    .gray {
+        font-size: 13px;
+    }
+}
+
+/* Utility */
+.w-80 {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .w-80 {
+        width: 90%;
+    }
+}
+
+.saved-cards-section {
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+    .saved-cards-section {
+        padding: 1rem;
+    }
+}

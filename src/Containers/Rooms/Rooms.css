@@ -1,16 +1,15 @@
 #rooms {
     width: 100%;
     position: relative;
-    padding: 110px 0 100px;
+    padding: 0 0 100px;
 }
 
 .hotel-check {
-    position: absolute;
+    position: relative;
     width: 80%;
     padding: 40px;
     left: 50%;
-    top: 0;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50px);
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -197,7 +196,7 @@
 .custom-menu {
     position: absolute;
     top: 50px;
-    right: 0;
+    right: -100%;
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 6px;
@@ -323,7 +322,7 @@
     border: 1px solid rgba(20, 20, 20, 0.1);
     border-radius: 4px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 14px;    
     letter-spacing: 0%;
     vertical-align: middle;
     padding: 11px 15px;
@@ -343,10 +342,6 @@
 
     .drop-down {
         width: 100%;
-    }
-
-    #rooms {
-        padding: 210px 0 100px;
     }
 
     .hotel-filter {
@@ -374,16 +369,9 @@
         width: 48%;
     }
 
-    #rooms {
-        padding: 150px 0 100px;
-    }
+  
 }
 
-@media screen and (min-width: 992px) {
-    #rooms {
-        padding: 130px 0 100px;
-    }
-}
 
 @media screen and (min-width: 1200px) {
     .hotel-check-data .commun-button {

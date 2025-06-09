@@ -1,80 +1,32 @@
-/* dinnings */
-
-* {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-}
-#hero-sub {
-    width: 100%;
-    height: 500px;
-    background-image: url(../../assets/image/dinning-hero.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.sub-hero-details {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-color: rgba(20, 20, 20, 0.6);
-}
-
-.sub-hero-data {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-.hero-main-title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
-}
-
-.hero-sub-title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    letter-spacing: 0.2px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-/* experience */
-
+#dinning {
+    padding: 100px 0 100px;
+ }
 #experience {
     width: 100%;
     padding: 100px 0 0 0;
     height: 748px;
     margin-bottom: 100px;
 }
-
+ 
 .hotel-experience {
     width: 80%;
     margin: 0 auto;
     display: flex;
     height: 100%;
     gap: 30px;
-
-
 }
-
+ 
 .hotel-image-box {
     display: flex;
     width: 60%;
     gap: 30px;
 }
-
+ 
 .hotel-data-box {
     width: 40%;
     margin-top: 96px;
 }
-
+ 
 .main-hotel-img {
     flex-direction: column;
     display: flex;
@@ -82,27 +34,26 @@
     height: 100%;
     gap: 30px;
 }
-
+ 
 .main-hotel-img-data {
     height: 50%;
-
+ 
 }
-
+ 
 .main-hotel-img .main-hotel-img-data img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
 }
-
+ 
 .sub-hotel-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
 }
-
-
+ 
 .opning-box {
     width: 100%;
     display: flex;
@@ -111,15 +62,15 @@
     gap: 20px;
     margin-top: 20px;
 }
-
+ 
 .opnning-time {
     border: 1px solid rgba(20, 20, 20, 0.3);
     border-radius: 4px;
     padding: 20px;
     width: 50%;
-
+ 
 }
-
+ 
 .opnning-time h5 {
     margin-bottom: 17px;
     font-weight: 500;
@@ -127,41 +78,169 @@
     line-height: 26px;
     color: rgba(20, 20, 20, 1);
 }
-
+ 
 .opnning-time a {
     display: block;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-
-} 
-
-
-
-/* ************************* */
-/* ************************* */
-
-
+ 
+}
+ 
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .hotel-experience {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+ 
+    .hotel-image-box,
+    .hotel-data-box {
+        width: 100%;
+    }
+ 
+    .main-hotel-img,
+    .sub-hotel-img {
+        width: 100%;
+        flex-direction: row;
+        gap: 20px;
+    }
+ 
+    .main-hotel-img-data {
+        height: auto;
+        width: 50%;
+    }
+ 
+    .main-hotel-img .main-hotel-img-data img,
+    .sub-hotel-img img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+ 
+    .hotel-data-box {
+        margin-top: 40px;
+    }
+ 
+    .opning-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+ 
+    .opnning-time {
+        width: 100%;
+    }
+ 
+    #experience {
+        height: auto;
+        padding: 60px 0;
+        margin-bottom: 60px;
+    }
+ 
+    .dinning-data {
+        flex-direction: column;
+        gap: 30px;
+    }
+ 
+    .dinning-data>div {
+        width: 100%;
+    }
+ 
+    .dinning-data img {
+        width: 100%;
+        height: auto;
+    }
+}
+ 
+/* Small screens (mobiles) */
+@media (max-width: 576px) {
+    .main-hotel-img {
+        flex-direction: column;
+    }
+ 
+    .main-hotel-img-data {
+        width: 100%;
+    }
+ 
+    .about-details-summury h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+ 
+    .about-details-summury p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+ 
+    #experience,
+    #dinning {
+        padding: 40px 0;
+        margin-bottom: 40px;
+    }
+}
+ 
+@media (max-width: 992px) and (min-width: 576px) {
+    .hotel-image-box {
+        flex-direction: column;
+    }
+ 
+    .main-hotel-img {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+ 
+    .main-hotel-img-data {
+        width: 50%;
+        height: auto;
+    }
+ 
+    .main-hotel-img-data img {
+        width: 100%;
+        height: 300px;
+        /* Fixed consistent height */
+        object-fit: cover;
+        border-radius: 4px;
+    }
+ 
+    .sub-hotel-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+ 
+    .sub-hotel-img img {
+        width: 100%;
+        height: 300px;
+        /* Match above */
+        object-fit: cover;
+        border-radius: 4px;
+    }
+}
+ 
+/*  */
+ 
 /* crafted */
-
-
+ 
+ 
 #crafted {
     width: 100%;
     padding: 50px 0 100px 0;
 }
-
+ 
 .crafted-box {
     width: 80%;
     margin: 0 auto;
 }
-
+ 
 .crafted-cuisine {
     width: 100%;
     margin-top: 55px;
     padding: 65px 83px;
     position: relative;
 }
-
+ 
 .crafted-cuisine-data {
     position: absolute;
     width: 420px;
@@ -171,24 +250,24 @@
     background: rgba(255, 255, 255, 1);
     border-radius: 4px;
 }
-
+ 
 .crafted-cuisine-data.bestseller {
     top: 0;
     left: 0;
 }
-
+ 
 .crafted-cuisine-data.taste {
     bottom: 0;
     right: 0;
 }
-
+ 
 .crafted-cuisine img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 4px;
 }
-
+ 
 .crafted-cuisine-data h5 {
     font-weight: 600;
     font-size: 20px;
@@ -196,9 +275,9 @@
     letter-spacing: 0%;
     color: rgba(20, 20, 20, 1);
     margin-bottom: 10px;
-
+ 
 }
-
+ 
 .crafted-cuisine-data p {
     margin-bottom: 0;
     font-weight: 400;
@@ -206,19 +285,19 @@
     line-height: 26px;
     color: rgba(20, 20, 20, 0.6);
 }
-
+ 
 /* #restaurant-gallery */
-
+ 
 #restaurant-gallery {
     width: 100%;
     padding: 80px 0 100px;
 }
-
+ 
 .restaurant-gallery-data {
     width: 80%;
     margin: 0 auto;
 }
-
+ 
 .rest-gal-box {
     width: 100%;
     margin-top: 73px;
@@ -226,44 +305,146 @@
     flex-direction: column;
     gap: 30px;
 }
-
+ 
 .restorant-img-box {
     width: 100%;
     height: 50%;
     display: flex;
-    
 }
-
+ 
 .restorant-img-box img {
     /* width: 100%; */
     /* height: 100%; */
     object-fit: cover;
-    border-radius: 4px;
     padding: 0 15px;
+    border-radius: 4px;
 }
-
+ 
 .restorant-img-box img:first-child {
     padding-left: 0 !important;
 }
-
+ 
 .restorant-img-box img:last-child {
-    padding-right: 0 ;
+    padding-right: 0;
 }
-
-
+ 
+/* -------- Responsive Styles -------- */
+ 
+/* Medium screens (≤ 992px) */
+@media (max-width: 992px) {
+    .crafted-box {
+        width: 90%;
+    }
+ 
+    .crafted-cuisine {
+        padding: 40px 20px;
+    }
+ 
+    .crafted-cuisine-data {
+        width: 100%;
+        position: static;
+        margin-top: 20px;
+    }
+ 
+    .crafted-cuisine-data.bestseller,
+    .crafted-cuisine-data.taste {
+        position: static;
+    }
+ 
+    .restorant-img-box {
+        flex-wrap: wrap;
+    }
+ 
+    .restorant-img-box img {
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+ 
+    .restorant-img-box img:first-child {
+        padding-left: 10px !important;
+    }
+ 
+    .restorant-img-box img:last-child {
+        padding-right: 10px;
+    }
+}
+ 
+/* Small screens (≤ 576px) */
+@media (max-width: 576px) {
+    .crafted-cuisine {
+        padding: 20px 10px;
+    }
+ 
+    .crafted-cuisine-data {
+        width: 100%;
+        padding: 15px;
+    }
+ 
+    .crafted-cuisine-data h5 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+ 
+    .crafted-cuisine-data p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+ 
+    .restaurant-gallery-data {
+        width: 90%;
+    }
+ 
+    .restorant-img-box img {
+        width: 100%;
+        padding: 5px 0;
+    }
+ 
+    .restorant-img-box {
+        gap: 10px;
+    }
+}
+ 
+/* Large screens: between 992px and 1200px */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .restaurant-gallery-data {
+        width: 90%;
+    }
+ 
+    .restorant-img-box {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+ 
+    .restorant-img-box img {
+        width: calc(25% - 15px);
+        height: auto;
+        padding: 0;
+    }
+ 
+    .restorant-img-box img:first-child {
+        padding-left: 0 !important;
+    }
+ 
+    .restorant-img-box img:last-child {
+        padding-right: 0;
+    }
+}
+ 
+ 
 /* Restaurant-Menu  */
-
-
+ 
 #Restaurant-Menu {
     width: 100%;
     padding: 100px 0;
 }
-
+ 
 .res-menu-box {
     width: 80%;
     margin: 0 auto;
 }
-
+ 
 .menu-category-box {
     width: 100%;
     /* display: flex;
@@ -272,7 +453,7 @@
     /* justify-content: start; */
     margin-bottom: 50px;
 }
-
+ 
 .menu-category-box ul {
     display: flex;
     flex-wrap: wrap;
@@ -280,39 +461,39 @@
     gap: 25px;
     width: 100%;
 }
-
+ 
 .menu-category-box ul li {
     border: 0.5px solid rgba(20, 20, 20, 0.3);
     border-radius: 4px;
     padding: 9px 10px;
     cursor: pointer;
 }
-
+ 
 .menu-category-box ul li .menu-category {
     color: rgba(20, 20, 20, 0.6);
     font-size: 16px;
     font-weight: 600;
-
+ 
 }
-
+ 
 .menu-category-box ul li:hover {
     border: 0.5px solid rgba(3, 65, 119, 1)
 }
-
+ 
 .menu-category-box ul li:hover .menu-category {
     color: rgba(3, 65, 119, 1);
     font-weight: 600;
 }
-
-
+ 
+ 
 .menu-item-box {
     width: 100%;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-
+ 
 }
-
+ 
 .menu-item {
     width: 50%;
     box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.08);
@@ -322,31 +503,27 @@
     display: flex;
     align-items: center;
     gap: 20px;
-  flex: 0 0 calc(50% - 15px);
+    flex: 0 0 calc(50% - 15px);
 }
-
+ 
 .menu-item img {
     width: 140px;
     height: 108px;
     border-radius: 4px;
     object-fit: cover;
 }
-
-.menu-item-image {
-    width: 140px;
-}
-
+ 
 .menu-item-data {
     width: 100%;
 }
-
+ 
 .menu-item-data .menu-name {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-
+ 
 .menu-item-data .menu-name h5 {
     font-weight: 600;
     font-size: 18px;
@@ -356,7 +533,7 @@
     color: rgba(20, 20, 20, 1);
     margin-bottom: 0;
 }
-
+ 
 .menu-item-data .menu-name h4 {
     font-weight: 600;
     font-size: 20px;
@@ -365,7 +542,11 @@
     color: rgba(20, 20, 20, 1);
     margin-bottom: 0;
 }
-
+ 
+.menu-item-image {
+    width: 140px;
+}
+ 
 .menu-item-data>p {
     font-weight: 400;
     font-size: 16px;
@@ -374,3 +555,133 @@
     margin-bottom: 0;
     color: rgba(20, 20, 20, 0.6);
 }
+ 
+/* ===== Tablets: 768px to 991px ===== */
+@media (min-width: 768px) and (max-width: 991px) {
+    .res-menu-box {
+        width: 90%;
+    }
+ 
+    .menu-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-direction: row;
+        gap: 15px;
+    }
+ 
+    .menu-item img {
+        width: 120px;
+        height: 90px;
+    }
+ 
+    .menu-category-box ul {
+        gap: 15px;
+    }
+}
+ 
+/* ===== Mobile: up to 767px ===== */
+@media (max-width: 767px) {
+    .res-menu-box {
+      width: 95%;
+    }
+ 
+    .menu-category-box ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+      }
+   
+      .menu-category-box ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+   
+      .menu-category-box ul li .menu-category {
+        font-size: 15px;
+      }
+ 
+    .menu-item-box {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+ 
+    .menu-item {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 100%;
+      padding: 15px;
+      gap: 15px;
+    }
+ 
+    .menu-item-image {
+      width: 100%;
+    }
+ 
+    .menu-item img {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+ 
+    .menu-item-data .menu-name {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      width: 100%;
+    }
+ 
+    .menu-item-data .menu-name h5,
+    .menu-item-data .menu-name h4 {
+      font-size: 18px;
+    }
+ 
+    .menu-item-data > p {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+ 
+ 
+  @media (min-width: 992px) and (max-width: 1399px) {
+    .res-menu-box {
+      width: 90%;
+    }
+ 
+    .menu-item-box {
+      gap: 24px;
+    }
+ 
+    .menu-item {
+      flex: 0 0 calc(50% - 12px); /* 2 items per row with spacing */
+      padding: 12px 16px;
+      gap: 16px;
+    }
+ 
+    .menu-item-image {
+      width: 130px;
+    }
+ 
+    .menu-item img {
+      width: 130px;
+      height: 100px;
+    }
+ 
+    .menu-item-data .menu-name h5 {
+      font-size: 17px;
+    }
+ 
+    .menu-item-data .menu-name h4 {
+      font-size: 18px;
+    }
+ 
+    .menu-item-data > p {
+      font-size: 15px;
+    }
+  }

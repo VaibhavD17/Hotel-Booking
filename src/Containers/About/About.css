@@ -1,13 +1,9 @@
- 
-
-
-
 /* about page
 
 hero section*/
 
 .hero-about {
-  background-image: url(../../assets/image/dinning-hero.jpg);
+  background-image: url(/public/assets/image/dinning-hero.jpg);
   height: 427px;
   width: 100%;
   position: relative;
@@ -61,10 +57,14 @@ hero section*/
 }
 
 .gray-text {
-  color: #14141499 ;
+  color: #14141499;
 }
 
 /* about-us */
+#about-us {
+  width: 100%;
+  padding: 50px 0 100px;
+}
 
 .max-width1100 {
   max-width: 1000px;
@@ -75,7 +75,7 @@ hero section*/
 }
 
 .pool-video {
-  background-image: url(../../assets/image/wonderlust.jpg);
+  background-image: url(/public/assets/image/wonderlust.jpg);
   height: 433px;
   width: 100%;
   position: relative;
@@ -97,10 +97,11 @@ hero section*/
   align-items: center;
 }
 
+
 /* why choose us */
 
 .icons-layer {
-  background-image: url(../../assets/image/circle.png);
+  background-image: url(/public/assets/image/circle.png);
   /* background-color: #0341770D; */
   position: relative;
   height: 105px;
@@ -141,18 +142,122 @@ hero section*/
   max-width: 90%;
   width: 100%;
 }
+
 .hero-content {
   width: 90%;
   max-width: 550px;
 }
+
 .container {
   width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
 }
 
+#our-story {
+  padding: 50px 0 100px;
+}
+
+#our-mission {
+  padding: 50px 0 100px;
+}
+
+#why-choose-us {
+  padding: 50px 0 100px;
+}
+
+.why-choose {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.why-choose-title {
+  font-size: 20px;
+  color: rgba(20, 20, 20, 1);
+  font-weight: 600;
+}
+
+.why-icon {
+  width: 83px;
+  height: 83px;
+ margin: 0 auto;
+}
+
+.why-choose-icon {
+ width: 83px;
+ height: 83px;
+ background-color: rgba(3, 65, 119, 0.05);
+ border-radius: 50%;
+ align-items: center;
+ position: relative;
+}
+ .why-choose-icon svg {
+   color: rgba(3, 65, 119, 1);
+   font-size: 40px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+.why-choose-data {
+ width: 48%;
+ display: flex;
+ align-items: center;
+ gap: 20px;
+ align-items: center;
+ margin-bottom: 40px;
+}
+
+.why-choose-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0%;
+ margin-bottom: 0;
+}
+
+.about-details-summury-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.about-details-summury-list div {
+  color: rgba(20, 20, 20, 1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.about-details-summury-list div svg {
+  color: #034177;
+}
+
+.gallery-data {
+ width: 80%;
+ margin: 0 auto;
+}
+
 /* Smartphones: 320px - 480px */
 @media (max-width: 480px) {
+  .why-choose-data {
+   width: 100%;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+ }
   .hero-about {
     height: 300px;
   }
@@ -165,21 +270,19 @@ hero section*/
     font-size: 14px;
   }
 
-  .d-flex {
-    flex-direction: column !important;
-    align-items: center !important;
-  }
 
   .pad-right {
     padding-right: 0;
   }
 
-  .main-title-1, .mid-main-title-1 {
+  .main-title-1,
+  .mid-main-title-1 {
     font-size: 22px;
     text-align: center;
   }
 
-  .sub-title-1, .sub-title-2 {
+  .sub-title-1,
+  .sub-title-2 {
     text-align: center;
   }
 
@@ -209,15 +312,12 @@ hero section*/
 
 /* Tablets: 481px - 768px */
 @media (max-width: 768px) {
-  .d-flex {
-    flex-direction: column !important;
-    align-items: center !important;
-  }
 
-  .ps-4 {
-    padding-left: 0 !important;
-    padding-top: 1rem;
-    text-align: center;
+
+  .about-img,
+  .about-details {
+    
+    width: 100% !important;
   }
 
   .main-title-1 {
@@ -236,6 +336,18 @@ hero section*/
 
 /* Small desktops: 769px - 1024px */
 @media (max-width: 1024px) {
+ .main-title-1 {
+   line-height: 30px;
+ }
+
+ .aboutData {
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
+ }
+ .why-choose-data {
+   width: 100%;
+ }
   .hero-content {
     max-width: 90%;
   }
@@ -249,20 +361,22 @@ hero section*/
     font-size: 45px;
   }
 }
-
+@media (max-width: 992px) {
+   .about-img, .about-details {
+       width: 100% !important;
+   }
+ }
 
 @media (min-width: 768px) {
 
-  .about-img,
-  .about-details {
-    flex: 1 1 50%;
-    max-width: 48%;
-  }
+
 
   .main-title-1 {
     font-size: 30px;
     line-height: 48px;
   }
+
+ 
 
   .sub-title-1,
   .sub-title-2 {
@@ -275,7 +389,3 @@ hero section*/
   height: auto;
   object-fit: cover;
 }
-
-
-
- 
