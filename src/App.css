@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-
+section {
+  width: 100%;
+}
 
 body {
   font-family: "Open Sans" !important;
@@ -146,7 +148,7 @@ header {
 #hero {
   width: 100%;
   height: 100vh;
-  background-image: url(./assets/image/heroimage.jpg);
+  background-image: url(/public/assets/image/heroimage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -202,50 +204,58 @@ header {
 }
 
 
+/* ******sub hero**** */
+#hero-sub {
+    width: 100%;
+    height: 500px;
+    background-image: url(/public/assets/image/dinning-hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-hero-details {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(20, 20, 20, 0.6);
+}
+
+.sub-hero-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.hero-main-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.hero-sub-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
 /* home-about */
 #home-about {
   width: 100%;
-  height: 745px;
+  padding: 0 0 100px;
   position: relative;
   background-color: rgba(247, 247, 247, 1);
 }
-
-
-
-
-/* .hotel-check-btn {
-  width: 190px;
-  outline: none;
-  border: none;
-  gap: 10px;
-  border-radius: 4px;
-  padding: 12px 26px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
-  background-color: rgba(3, 65, 119, 1);
-  color: rgba(255, 255, 255, 1);
-
-} */
-
-
-
-
-.data-about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 75%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 475px;
-  gap: 30px;
-
+#home-about .aboutData {
+  padding-top: 100px;
 }
-
 .about-details {
   width: 50%;
 }
@@ -324,106 +334,7 @@ header {
 
 
 
-#home-about {
-  width: 100%;
-  height: 745px;
-}
 
-
-/* amenities */
-
-
-#amenities {
-  width: 100%;
-  height: 555px;
-  background-image: url(./assets/image/amenities.png);
-  background-size: cover;
-}
-
-
-.ameni-container {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: relative;
-}
-
-.amenities-data {
-  padding-top: 80px;
-  width: 644px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
-.amenities-data h4 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 48px;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-}
-
-.amenities-data p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 0;
-}
-
-.amenities-boxData {
-  display: flex;
-  align-items: center;
-  width: 1320px;
-  gap: 30px;
-  margin: 0 auto;
-}
-
-.box-ameni {
-  width: 195px;
-  height: 195px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 4px;
-  padding: 40px 10px;
-  gap: 20px;
-}
-
-.box-ameni .icon-Box {
-  width: 70px;
-  height: 70px;
-  background-color: #fff;
-  border-radius: 4px;
-  margin: 0 auto;
-  position: relative;
-  margin-bottom: 20px;
-
-}
-
-.box-ameni .icon-Box svg {
-  display: block;
-  margin: 0 auto;
-  color: rgba(3, 65, 119, 1);
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-}
-
-.box-ameni h5 {
-  margin-bottom: 0;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-}
-
-
-
-/* our-rooms */
 
 
 
@@ -440,7 +351,7 @@ header {
 }
 
 .our-rooms-start {
-  width: 644px;
+  width: 50%;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -678,28 +589,6 @@ header {
 
 /* wanderlust */
 
-.pool-video {
-  background-image: url(./assets/image/wonderlust.jpg);
-  height: 433px;
-  width: 100%;
-  position: relative;
-  color: white;
-  font-family: Arial, sans-serif;
-  background-position: center;
-  background-size: cover;
-}
-
-.wanderlust-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #14141499;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .hero-content-div {
   text-align: center;
@@ -720,41 +609,16 @@ header {
 
 /* dinning */
 
-#dinning {
-  width: 100%;
-  padding: 80px 0 100px;
 
-}
-
-.dinning-data {
-  max-width: 80%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-
-}
-
-.dinning-data .about-details-summury {
-  width: 50%;
-}
-
-.dinning-data .img-fluid {
-  width: 50%;
-}
-
-#dinning .sub-title-2 {
-  line-height: 26px;
-  font-size: 18px;
-  margin: 5px 0;
-}
-
-#dinning .link-devises {
-  display: block;
-  font-size: 16px;
-  margin-top: 30px;
-}
-
+ .aboutData {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 80%;
+   margin: 0 auto;
+   gap: 30px;
+ }
+ 
 
 
 
@@ -1199,10 +1063,16 @@ textarea {
   .footer-links li {
     font-size: 0.9rem;
   }
+   .hero-content-div h2 {
+    font-size: 40px !important;
+  }
 }
 
 
 @media (max-width: 991.98px) {
+  .our-rooms-start {
+  width: 90%;
+}
   .mg70 {
     margin-left: 0 !important;
   }
@@ -1235,8 +1105,17 @@ textarea {
   }
 
   .hero-content-div h2 {
-    font-size: 70px;
+    font-size: 70px !important;
   }
+}
+
+@media (max-width: 1024px) { 
+  .about-img {
+    width: 100%;
+}
+.about-details {
+    width: 0%;
+}
 }
 
 @media (max-width: 998px) {
@@ -1284,6 +1163,9 @@ textarea {
   .header-sign .commun-button {
     width: 100%;
   }
+    #gallery img {
+    height: 320px !important;
+  }
 }
 
 
@@ -1301,5 +1183,14 @@ textarea {
     font-size: 13px;
     width: auto;
     padding: 12px 20px;
+  }
+    #gallery img {
+    height: 420px;
+  }
+}
+
+@media (min-width: 1201px) {
+  #gallery img {
+    height: 420px;
   }
 }

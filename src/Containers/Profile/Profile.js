@@ -1,7 +1,5 @@
 import React, { useRef, useState } from 'react';
 import "./Profile.css";
-import defaultProfilePic from "../../assets/image/profile-img.png"
-
 import { IoMdPerson } from "react-icons/io";
 import { FaCalendarCheck } from "react-icons/fa";
 import { HiCreditCard } from "react-icons/hi2";
@@ -73,7 +71,7 @@ const Profile = () => {
                         <div className="position-relative" style={{ position: 'relative' }}>
                             <img
                                 className="profile-pic"
-                                src={profilePic || defaultProfilePic}
+                                src={profilePic || '/assets/image/profile-img.png'}
                                 alt="Profile"
                                 style={{
                                     height: '110px',
@@ -158,73 +156,7 @@ const Profile = () => {
     );
 };
  
- 
-// function Profile() {
-//     return (
-//         <>
- 
-//             <div className='profile-section'>
-//                 <div className='profile-content d-flex'>
-//                     <div className='my-profile'>
-//                         <div className='light-bg frist-row align-items-center d-flex'>
-//                             <div className='circle'>
-//                                 <IoMdPerson />
-//                             </div>
-//                             <div className=''>
-//                                 <h5 className='text-dark fontz'>My Profile</h5>
-//                             </div>
-//                         </div>
-//                         <div className='frist-row align-items-center d-flex'>
-//                             <div className='circle'>
-//                                 <FaCalendarCheck />
-//                             </div>
-//                             <div className=''>
-//                                 <h5 className='text-dark fontz'>My bookings</h5>
-//                             </div>
-//                         </div>
-//                         <div className='frist-row align-items-center d-flex'>
-//                             <div className='circle'>
-//                                 <HiCreditCard />
-//                             </div>
-//                             <div className=''>
-//                                 <h5 className='text-dark fontz'> Saved cards  </h5>
-//                             </div>
-//                         </div>
-//                         <div className='frist-row align-items-center d-flex'>
-//                             <div className='circle'>
-//                                 <IoMdLock />
-//                             </div>
-//                             <div className=''>
-//                                 <h5 className='text-dark fontz'> Change Password </h5>
-//                             </div>
-//                         </div>
-//                         <div className='frist-row align-items-center d-flex'>
-//                             <div className='circle'>
-//                                 <FaUserAltSlash />
-//                             </div>
-//                             <div className=''>
-//                                 <h5 className='text-dark fontz'> Delete Account </h5>
-//                             </div>
-//                         </div>
-//                         <div className='frist-row align-items-center d-flex'>
-//                             <div className='circle'>
-//                                 <PiPowerFill />
-//                             </div>
-//                             <div className=''>
-//                                 <h5 className='text-dark fontz'> Logout </h5>
-//                             </div>
-//                         </div>
-//                     </div>
-//                     <div>
- 
-//                     </div>
-//                 </div>
-//             </div>
- 
-//         </>
-//     )
-// }
- 
+
 export default Profile
  
  

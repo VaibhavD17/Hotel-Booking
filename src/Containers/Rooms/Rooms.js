@@ -67,7 +67,7 @@ function Rooms() {
         month: "short",
         year: "numeric",
     })
-     const CheckOut = checkOutDate.toLocaleDateString("en-GB", {
+    const CheckOut = checkOutDate.toLocaleDateString("en-GB", {
         day: "2-digit",
         month: "short",
         year: "numeric",
@@ -159,7 +159,7 @@ function Rooms() {
                             <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>{section.title}</Typography>
                             {openSection === idx ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </ListItem>
-                        
+
 
                         <Collapse in={openSection === idx} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
@@ -167,7 +167,13 @@ function Rooms() {
                                     <ListItem key={i} dense sx={{ pl: 4 }}>
                                         <FormControlLabel
                                             control={
-                                                <Checkbox
+                                                <Checkbox 
+                                                sx={{
+                                                    color:"rgba(3, 65, 119, 1)",
+                                                    '&.Mui-checked': {
+                                                        color:"rgba(3, 65, 119, 1)",
+                                                    },
+                                                }}
                                                     checked={(selectedFilters[section.title] || []).includes(option)}
                                                     onChange={() => handleCheck(section.title, option)}
                                                 />
@@ -198,6 +204,10 @@ function Rooms() {
                     min={50}
                     max={5000}
                     onChange={(e, newValue) => setPriceRange(newValue)}
+                    sx={{
+                                                    color:"rgba(3, 65, 119, 1)",
+                                                    
+                                                }}
                 />
             </ListItem>
 
@@ -363,7 +373,7 @@ function Rooms() {
                             <button className=" hotel-check-btn commun-button">Check Availability</button>
                         </div>
                     </div>
-                    {/* </div> */}
+                    
                 </div>
 
                 <div className="hotel-filter">

@@ -261,10 +261,7 @@ textarea {
 
 /* Tablet view (768px and below) */
 @media (max-width: 768px) {
-    .manage-container {
-        flex-direction: column;
-        background: none;
-    }
+   
 
     .manage-container img {
         width: 100%;
@@ -275,12 +272,13 @@ textarea {
     .mange-data {
         width: 100%;
         padding: 20px;
-        text-align: center;
+        text-align: center !important;
     }
 
     .mange-data h3 {
         font-size: 24px;
         line-height: 1px;
+          text-align: center !important;
     }
 
     .mange-data p {
@@ -304,6 +302,7 @@ textarea {
     .mange-data h3 {
         font-size: 20px;
         line-height: 30px;
+        text-align: center;
     }
 
     .mange-data p {
@@ -377,9 +376,29 @@ textarea {
 }
 
 @media screen and (max-width: 991px) {
+     .manage-container {
+        flex-direction: column;
+        background: none;
+    }
     .contact-container {
         flex-wrap: wrap;
 
+    }
+    
+    .manage-container > img {
+        width: 100%;
+        height: auto;
+        z-index: 0;
+    }
+
+    .mange-data {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mange-data h3 {
+          text-align: center !important;
     }
 
     .contact-info {

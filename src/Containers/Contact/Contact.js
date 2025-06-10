@@ -2,9 +2,6 @@ import React from "react";
 import "./Contact.css"
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import sunfantico from "../../assets/image/sun-fantico.png"
-import download from "../../assets/image/download.jpg"
-import playstore from "../../assets/image/play-store dark.png"
 
 function Contact() {
     return (
@@ -88,20 +85,20 @@ function Contact() {
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55710.36300922684!2d-122.44537198148633!3d37.77510536854652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1749029833424!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div className="map-place-img">
-                        <img src={sunfantico} />
+                        <img src={'/assets/image/sun-fantico.png'} />
                     </div>
                 </div>
             </section>
 
             <section id="mange-booking">
                 <div className="manage-container">
-                    <img src={download} />
+                    <img src={'/assets/image/download.jpg'} />
 
                     <div className="mange-data">
 
                         <h3>Manage your bookings, check-in online, and more.</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <img src={playstore} />
+                        <img src={'/assets/image/play-store dark.png'} />
 
                     </div>
                 </div>
